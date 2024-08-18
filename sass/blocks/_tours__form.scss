@@ -1,0 +1,217 @@
+.cabinet {
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba($wave, .3),
+        rgba($wave, 0) 50%,
+        rgba($wave, .3)
+    );
+
+    box-shadow: 0 .4rem 4.5rem rgba($wave, .95);
+}
+
+.cabinet__form {
+    &--question {
+        margin-top: 2rem;
+    }
+}
+
+.cabinet__header {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &--question {
+        height: 12%;
+
+        @include breakpoint ($mobile-iphone) {
+            height: 15%;
+        }
+    }
+}
+
+.cabinet__form__header {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $white;
+
+    background-color: $wave;
+
+    position: relative;
+}
+
+.cabinet__logo {
+    display: none;
+
+    margin-top: 4rem;
+
+    width: 75%;
+
+    @include breakpoint ($sm1-desktop) {
+        display: block;
+    }    
+}
+
+.form__header-text {
+    margin-left: 7rem;
+
+    font-family: 'Pattaya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+
+    @include breakpoint ($mobile-iphone) {
+        margin-left: 7.5rem;
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        margin-left: 8.5rem;
+    }
+
+    &--question {
+        margin-left: 8rem;
+
+        @include breakpoint ($mobile-iphone) {
+            margin-left: 9rem;
+        }
+    }
+}
+
+.form__header__content {
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+    align-items: center;
+}
+
+.form__cost {
+    width: 65%;
+
+    text-align: center;
+    font-size: 3rem;
+    color: $pink;
+
+    &--excursion {
+        width: 60%;
+    }
+}
+
+.form__date {
+    width: 35%;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__date-item {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.form__date-img {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.form__date-text {
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.cabinet__form {
+    width: 100%;
+}
+
+.form__group {
+    padding-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__control {
+    padding: 1rem;
+    width: 90%;
+    height: 4rem;
+
+    border: .1rem solid $dark-grey;
+    border-radius: 1rem;
+
+    &::placeholder {
+        font-size: 1.7rem;
+    }
+
+    &--textarea {
+        height: 9rem;
+
+        overflow: hidden;
+        resize: none;
+
+        &::placeholder {
+            font-size: 1.4rem;
+        }
+    }
+
+    &--send {
+        height: 14.5rem;
+
+        overflow: hidden;
+        resize: none;
+
+        &::placeholder {
+            font-size: 1.4rem;
+        }
+    }
+
+    &:hover, &:focus {
+        border-color: $yellow;
+    }
+}
+
+.send__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint ($mobile) {
+        margin-top: 1.2rem;
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        margin-top: .6rem;
+
+        &--top {
+            &.mt {
+                margin-top: 2rem;
+
+                animation: marginTop .5s ease-in-out forwards;
+            }
+        }
+    }
+
+    &--question {
+        @include breakpoint ($mobile) {
+            margin-top: 0;
+        }
+
+        @include breakpoint ($sm2-desktop) {
+            margin-top: .3rem;
+        }
+
+        @include breakpoint ($b1-desktop) {
+            margin-top: .5rem;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+html {
+    font-size: 62.5%; /* 10px */
+}
+
+body {
+    background-color: $white;
+
+    font-family: 'Cormorant Infant', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 200%; /* 20px */
+    line-height: 1.2;
+    color: $black;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+.main {
+    padding-top: 5rem;
+
+    @include breakpoint($mobile-iphone) {
+        padding-top: 6rem;
+    }
+
+    @include breakpoint($tablet) {
+        padding-top: 9.5rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        padding-top: 12rem;
+    }
+
+    @include breakpoint($desktop) {
+        padding-top: 15rem;
+    }
+
+    &--pt {
+        @include breakpoint($sm2-desktop) {
+            padding-top: 10rem;
+        }
+    
+        @include breakpoint($desktop) {
+            padding-top: 13rem;
+        }
+
+        @include breakpoint($b1-desktop) {
+            padding-top: 15rem;
+        }
+    }
+
+    &--excursions {
+        padding-top: 8rem;
+
+        @include breakpoint($mobile-iphone) {
+            padding-top: 10rem;
+        }
+
+        @include breakpoint($tablet) {
+            padding-top: 12rem;
+        }
+
+        @include breakpoint($b2-tablet) {
+            padding-top: 15rem;
+        }
+
+        @include breakpoint($b1-desktop) {
+            padding-top: 17rem;
+        }
+    }
+}
+
+.visually-hidden {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    margin-left: -1000px;
+    background: transparent;
+    font-size: 0;
+}
+
+.none {
+    display: none !important;
+}

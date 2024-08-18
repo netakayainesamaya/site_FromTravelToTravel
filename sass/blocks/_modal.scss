@@ -1,0 +1,257 @@
+.modal {
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(6, 15, 49, 0.9);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    &.show-modal {
+        display: flex;
+    }
+}
+
+.modal__gallery {
+    position: relative;
+
+    margin: auto;
+
+    width: 100%;
+    height: 100%;
+    max-width: 120rem;
+    max-height: 80rem;
+
+    transform: rotateX(90deg);
+    transition: transform .2s linear;
+
+    &:hover {
+        .modal__close {
+            display: block;
+        }
+
+        .modal__images__buttons {
+            display: flex;
+        }
+    }
+}
+
+.modal__images {
+    max-width: 120rem;
+    max-height: 80rem;
+
+    background-color: white;
+}
+
+.modal__slider-list {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+}
+
+.modal__slider-element {
+    width: 100%;
+
+    display: block;
+    
+    opacity: 0;
+    
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+
+    transition: opacity 1s ease-in;
+}
+
+.modal__photo {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate3d(-50%, 100%, 0);
+}
+
+.modal__close {
+    display: none;
+
+    padding: 0;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: $z-index-hundred;
+
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: rotate(90deg);
+    }
+
+    &--question {
+        top: 1rem;
+        right: 3rem;
+
+        @include breakpoint ($mobile-iphone) {
+            top: 1.5rem;
+            right: 3.5rem;
+        }
+
+        @include breakpoint ($sm1-desktop) {
+            right: 1.5rem;
+        }        
+    }
+
+    &--call {
+        @include breakpoint ($mobile-iphone) {
+            top: 1rem;
+            right: 3rem;
+        }
+
+        @include breakpoint ($big-mobile) {
+            top: 1.2rem;
+            right: 3.2rem;
+        }
+
+        @include breakpoint ($tablet) {
+            top: 1.3rem;
+            right: 1.3rem;
+        }
+    }
+
+    &--send {
+        @include breakpoint ($tablet) {
+            top: 1.3rem;
+            right: 1.3rem;
+        }
+    }
+}
+
+.img__close {
+    width: 3rem;
+    height: 3rem;
+
+    fill: $grey;
+
+    &--filter {
+        width: 2.5rem;
+        height: 2.5rem;
+
+        fill: $black;
+        opacity: .35;
+
+        @include breakpoint ($sm2-tablet) {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    &:hover {
+        fill: $yellow;
+    }
+
+    &--excursion {
+        width: 2.5rem;
+        height: 2.5rem;
+
+        @include breakpoint ($mobile-iphone) {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+}
+
+.modal__images__buttons {
+    width: 100%;
+
+    display: none;
+    justify-content: space-between;
+
+    padding: 1rem 1rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    @include breakpoint($big-mobile) {
+        bottom: 43%;
+    }
+}
+
+.modal__images__btn {
+    padding: 0;
+
+    background: none;
+    border: 0;
+
+    &.slickPrev {
+        transition: transform .2s ease-in;
+
+        &:hover {
+            transform: translateX(-.5rem);
+        }
+    }
+
+    &.slickNext {
+        transition: transform .2s ease-in;
+
+        &:hover {
+            transform: translateX(.5rem);
+        }
+    }
+}
+
+.prev__button, .next__button {
+    width: 3rem;
+    height: 3rem;
+
+    fill: $grey;
+
+    transition: transform .2s linear;
+
+    &:hover {
+        fill: $yellow;
+    }
+
+    @include breakpoint($big-mobile) {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    @include breakpoint($b1-tablet) {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        width: 9rem;
+        height: 9rem;
+    }
+}
+
+.prev__button {
+    transform: rotate(180deg);
+
+    &:hover {
+        transform: rotate(180deg);
+    }
+}
+
+.modal__slider-dots {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 1%;
+    z-index: 3;
+    text-align: center;
+}

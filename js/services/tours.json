@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "picture": "fiolent",
+        "title": "\"Крымские Мальдивы\"",
+        "shortTitle": "Фиолент",
+        "price": "от 7000 руб"
+    },
+    {
+        "id": 2,
+        "picture": "new_world",
+        "title": "Новый Свет. Тропа Галицына. Мыс Капчик",
+        "shortTitle": "Новый Свет",
+        "price": "от 20000 руб"
+    },
+    {
+        "id": 3,
+        "picture": "coctebel",
+        "title": "Джазовая столица Крыма - Коктебель",
+        "shortTitle": "Коктебель",
+        "price": "от 8000 руб"
+    },
+    {
+        "id": 4,
+        "picture": "foros",
+        "title": "Удивительные места Фороса",
+        "shortTitle": "Форос",
+        "price": "от 12000 руб"
+    },
+    {
+        "id": 5,
+        "picture": "popovka",
+        "title": "Z-City. Три озера",
+        "shortTitle": "Z-City",
+        "price": "от 33000 руб"
+    },
+    {
+        "id": 6,
+        "picture": "balaclava",
+        "title": "\"Крымская Венеция\"",
+        "shortTitle": "Балаклава",
+        "price": "от 18000 руб"
+    },
+    {
+        "id": 7,
+        "picture": "tarhankut",
+        "title": "Тарханкут - на край крымской земли!",
+        "shortTitle": "Тарханкут",
+        "price": "от 35000 руб"
+    },
+    {
+        "id": 8,
+        "picture": "feodosia",
+        "title": "Семь Чудес Киммерии",
+        "shortTitle": "Феодосия",
+        "price": "от 23000 руб"
+    },    
+    {
+        "id": 9,
+        "picture": "hike",
+        "title": "Горы Море Облака",
+        "shortTitle": "Горы Море",
+        "price": "от 12000 руб"
+    }
+]

@@ -1,0 +1,140 @@
+@mixin breakpoint($bp) { //т.е. будем вызывать миксик, отправлять в него какое-то зн-е; далее принимать его подставлять в медиа и контент будет поставляться то, что мы напишем в breakpoint
+
+    @media screen and (min-width: $bp) {
+        @content;
+    }
+}
+
+@keyframes showBlock {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes translateAnimation {
+    0% {
+        transform: translateX(-90%);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+
+// Ближайшие даты post__footer
+@keyframes marginPostCost {
+    0% {
+        margin: 3rem 0 2rem 0;
+
+    }
+    100% {
+        margin: 2rem 0 1rem 0;
+    }
+}
+
+@keyframes marginCommingDate {
+    0% {
+        margin-top: 1.5rem;
+
+    }
+    100% {
+        margin-top: 0.5rem;
+    }
+}
+
+@keyframes heightCommingDate {
+    0% {
+        height: 4.4rem;
+
+    }
+    100% {
+        height: 8.6rem;
+    }
+}
+
+
+// Tours Etc Mobile 
+@keyframes heightCalendarDatePhoneExc {
+    0% {
+        height: 2rem;
+
+    }
+    100% {
+        height: 10rem;
+    }
+}
+
+
+// Tours Etc Mobile Iphone
+@keyframes heightCalendarDateMobileIphone {
+    0% {
+        height: 1.7rem;
+
+    }
+    100% {
+        height: 4.8rem;
+    }
+}
+
+
+// Tours Etc Mobile
+@keyframes heightCalendarDateMobile {
+    0% {
+        height: 2rem;
+
+    }
+    100% {
+        height: 6.7rem;
+    }
+}
+
+
+// Tours Etc BigMobile
+@keyframes heightCalendarDateBigMobile {
+    0% {
+        height: 2rem;
+
+    }
+    100% {
+        height: 7.7rem;
+    }
+}
+
+
+// Tours Etc Desktop 
+@keyframes marginTop {
+    0% {
+        margin-top: 0.6rem;
+
+    }
+    100% {
+        margin-top: 2rem;
+    }
+}
+
+@keyframes heightCalendarDateDesktop {
+    0% {
+        height: 1.7rem;
+
+    }
+    100% {
+        height: 6.4rem;
+    }
+}
+
+@keyframes heightContainerMapDesktop {
+    0% {
+        height: 44.5rem;
+
+    }
+    100% {
+        height: 49rem;
+    }
+}

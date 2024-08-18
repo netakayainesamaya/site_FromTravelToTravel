@@ -1,0 +1,120 @@
+.transition {
+    max-width: 130rem;
+
+    font-size: 1.7rem;
+    opacity: .5;
+
+    @include breakpoint($big-mobile) {
+        margin: 1.5rem 0;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        margin: 1.5rem 1rem;
+
+        font-size: 2rem;
+    }
+
+    @include breakpoint($tablet) {
+        margin: 0 3rem 1.5rem;
+    }
+
+    @include breakpoint($b1-tablet) {
+        margin: 0 4rem 1.5rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        margin: 0 auto 2rem 10rem;
+    }
+
+    @include breakpoint($desktop) {
+        margin: 0 auto 2rem 8rem;
+    }
+
+    @include breakpoint($b1-desktop) {
+        margin: 0 auto 2rem;
+    }
+
+    &--about {
+        margin: 1rem 2rem;
+
+        @include breakpoint($big-mobile) {
+            margin: 1.5rem 3rem;
+        }
+
+        @include breakpoint($sm1-tablet) {
+            margin: 1.5rem 4rem;
+
+            font-size: 2rem;
+        }
+
+        @include breakpoint($tablet) {
+            margin: 0 5rem 1.5rem;
+        }
+
+        @include breakpoint($b1-tablet) {
+            margin: 0 7rem 1.5rem;
+        }
+
+        @include breakpoint($b2-tablet) {
+            margin: 2.5rem auto 2rem 12rem;
+        }
+
+        @include breakpoint($desktop) {
+            margin: 0 auto 2rem 18rem;
+        }
+
+        @include breakpoint($b1-desktop) {
+            margin: 0 auto 2rem;
+        }
+    }
+}
+
+.transition__title {
+    display: inline;
+
+    color: $black;
+
+    &:hover {
+        color: $pink;
+    }
+}
+
+.transition__text {
+    display: none;
+
+    color: $black;
+
+    @include breakpoint($mobile-iphone) {
+        display: inline;
+    }
+
+    &--short {
+        display: inline;
+
+        p {
+            display: inline;
+        }
+
+        @include breakpoint($mobile-iphone) {
+            display: none;
+        }
+    }
+}
+
+.transition__arrows {
+    display: inline;
+}
+
+.transition__arrow {
+    margin-top: .1rem;
+
+    width: 2.95rem;
+    height: 2rem;
+
+    vertical-align: top;
+
+    @include breakpoint($sm1-tablet) {
+        width: 4rem;
+        height: 2.5rem;
+    }
+}

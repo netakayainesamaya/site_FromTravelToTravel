@@ -1,0 +1,55 @@
+input[type="range"] {
+    width: 21.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    overflow: hidden;
+    height: .9rem;
+    border-radius: 1.5rem;
+
+    @include breakpoint ($sm2-tablet) {
+        width: 19rem;
+    }
+
+    @include breakpoint ($tablet) {
+        width: 21.5rem;
+    }
+
+    @include breakpoint ($desktop) {
+        width: 19rem;
+    }
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: .9rem;
+    -webkit-appearance: none;
+    background-color: lighten($grey, 12%);
+    border: .1rem solid $grey;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    width: .9rem;
+    -webkit-appearance: none;
+    height: .9rem;
+    cursor: pointer;
+    background: $white;
+    border-radius: 2rem;
+    margin-top: -.1rem;
+
+    box-shadow: -13rem 0 0 13rem $wave;
+}
+
+input[type="range"]::-moz-range-track {
+    height: .9rem;
+    background-color: $wave;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background-color: $green-wave;
+    cursor: pointer;
+    height: .9rem;
+    border-radius: 0;
+    box-shadow: -13rem 0 0 13rem $wave;
+    padding: 0;
+    margin: 0;
+}

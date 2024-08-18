@@ -1,0 +1,311 @@
+.sidebar__filter {
+    width: 22.5rem;
+    height: 46rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    background-image: linear-gradient(
+            to bottom,
+            rgba($wave, .3),
+            rgba($wave, 0) 50%,
+            rgba($wave, .3)
+    );
+
+    box-shadow: 0 .4rem 4.5rem rgba($wave, .95);
+
+    &.show {
+        @include breakpoint ($big-mobile) {
+            opacity: 0;
+            transform: translateX(-90%);
+            transition: transform .2s linear;
+        }
+    
+        @include breakpoint ($sm2-tablet) {
+            height: 47rem;
+        }
+    
+        @include breakpoint ($desktop) {
+            opacity: 1;
+            transform: translateX(0%);
+            display: flex;
+            height: 46rem;
+        }
+    }
+
+    &.active {
+        display: flex;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(6, 15, 49, 0.9);
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: $z-index-thousand-ten;
+
+        &:hover {
+            .modal__close {
+                display: block;
+            }
+        }
+
+        .sidebar__filter-bg {
+            margin: auto;
+            width: 30.2rem;
+            // height: 46.3rem;
+        
+            background: $wave url('./../../img/nav-bg.png');
+        }
+    }
+
+    &.activeWithoutModal {
+        display: flex;
+
+        width: 31.4rem;
+
+        left: auto;
+        right: 0;
+
+        background: $wave url('./../../img/nav-bg.png');
+
+        transform: translateX(0%);
+        opacity: 1;
+        animation: translateAnimation .2s ease-in-out forwards;
+
+        &:hover {
+            .modal__close {
+                display: block;
+            }
+        }
+
+        @include breakpoint($sm2-tablet) {
+            width: 23.3rem;
+
+            left: 0;
+            z-index: $z-index-hundred;
+        }
+
+        @include breakpoint ($sm1-tablet) {
+            width: 24.5rem;
+        }
+
+        @include breakpoint ($tablet) {
+            width: 27.95rem;
+        }
+
+        @include breakpoint ($b1-tablet) {
+            width: 25.6rem;
+        }
+        
+        @include breakpoint($b2-tablet) {
+            width: 28.2rem;
+        }
+
+        @include breakpoint ($sm2-desktop) {
+            width: 29.4rem;
+        }
+
+        @include breakpoint ($sm1-desktop) {
+            width: 31.88rem;
+        }
+
+        @include breakpoint ($desktop) {
+            width: 25.6rem;
+        }
+    }
+}
+
+.sidebar__filter-bg {
+    position: relative;
+
+    height: 46.3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    transform: rotateX(90deg);
+    transition: transform .2s linear;
+
+    &.active {
+        transform: rotateX(0);
+    }
+
+    .modal__close {
+        @include breakpoint ($big-mobile) {
+            top: 3%;
+        }
+
+        @include breakpoint ($sm2-tablet) {
+            top: 1.5%;
+            right: 4.5%;
+        }
+
+        @include breakpoint ($tablet) {
+            top: 2%;
+        }
+    }
+
+    @include breakpoint ($big-mobile) {     
+        transform: rotateX(0);
+    }
+}
+
+.sidebar__filter-container {
+    padding-bottom: .5rem;
+}
+
+.sidebar__block {
+    margin: 1.1rem 1.5rem 1rem 1.5rem;
+}
+
+.sidebar__title {
+    font-family: 'Cormorant Infant', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2.3rem;
+}
+
+.sidebar__content {
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.slider__circle {
+    cursor: pointer;
+    height: 1rem;
+    width: 100%;
+    margin: .5rem 0 .3rem;
+
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint ($sm2-tablet) {     
+        margin: .5rem 0 1rem;
+    }
+
+    @include breakpoint ($tablet) {     
+        margin: .5rem 0 .3rem;
+    }
+
+    @include breakpoint ($desktop) {     
+        margin: .5rem 0 1rem;
+    }
+}
+
+.slider__output, .slider__output--price {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    z-index: 2;
+
+    width: 1.417rem;
+    height: 1.8rem;
+    text-align: center;
+
+    font-family: 'Cormorant Infant', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    opacity: .7;
+
+    &--price {
+        right: 12%;
+        width: 4.7rem;
+        text-align: end;
+    }
+
+    @include breakpoint ($sm2-tablet) {
+        right: 16%;
+
+        &--price {
+            right: 13%;
+        }
+    }
+
+    @include breakpoint ($tablet) {
+        right: 15%;
+
+        &--price {
+            right: 12%;
+        }
+    }
+
+    @include breakpoint ($desktop) {
+        right: 16.5%;
+        opacity: .5;
+
+        &--price {
+            right: 13%;
+        }
+    }
+
+    &.right {
+        right: 11%;
+
+        @include breakpoint ($sm2-tablet) {
+            right: 12%;
+        }
+
+        @include breakpoint ($tablet) {
+            right: 11%;
+        }
+
+        @include breakpoint ($desktop) {
+            right: 12%;
+        }
+    }
+}
+
+
+/* Input/Output  input.scss */
+.sidebar__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first__sum {
+    display: flex;
+    justify-content: start;
+}
+
+.first__sum-text {
+    margin-right: .5rem;
+}
+
+.finish__sum {
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish__sum-text {
+    margin-left: 2rem;
+
+    &--price {
+        margin-left: 5rem;
+    }
+}
+
+.first__sum, .finish__sum {
+    font-size: 1.5rem;
+    opacity: .7;
+
+    @include breakpoint ($desktop) {
+        opacity: .5;
+    }
+}
+
+/* Checkbox  checkbox.scss */

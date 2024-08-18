@@ -1,0 +1,699 @@
+.footer {
+    margin-top: 3rem;
+
+    display: flex;
+    width: 100%;
+    height: 13rem;
+
+    background-color: $light-wave;
+    background-image: url("./../../img/footer/footer-bg.png");
+    box-shadow: 0 .5rem 7.5rem rgba($wave, .95);
+
+    @include breakpoint($sm1-tablet) {
+        margin-top: 4rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        height: 17.3rem;
+    }
+
+    @include breakpoint($desktop) {
+        margin-top: 5rem;
+    }
+    
+    @include breakpoint($b2-desktop) {
+        height: 18.2rem;
+    }
+
+    &--mt0 {
+        margin-top: 0;
+    }
+}
+
+.footer__logo {
+    position: relative;
+
+    margin-left: 1rem;
+
+    width: 18%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint($b1-tablet) {
+        display: flex;
+    }
+
+    @include breakpoint($b2-tablet) {
+        position: static;
+
+        width: 18%;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        width: 15%;
+    }
+
+    @include breakpoint($b2-desktop) {
+        width: 20%;
+    }
+}
+
+.footer__logo-image {
+    width: 18rem;
+
+    height: 100%;
+        
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    @include breakpoint($b2-tablet) {
+        position: static;
+
+        width: 21rem;
+        height: auto;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        width: 29rem;
+    }
+}
+
+.footer__content {
+    width: 100%;
+    display: flex;
+
+    @include breakpoint($b1-tablet) {
+        width: 82%;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        width: 85%;
+    }
+
+    @include breakpoint($b2-desktop) {
+        width: 80%;
+    }
+}
+
+
+/* Footer-content ==========================================
+==========================================================*/
+.footer__menu {
+    padding: .5rem;
+
+    width: 65%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint($mobile) {
+        width: 50%;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        width: 40%;
+    }
+
+    @include breakpoint($desktop) {
+        width: 41%;
+    }
+
+    @include breakpoint($b1-desktop) {
+        width: 39%;
+        // align-items: baseline;
+    }
+
+    @include breakpoint($b2-desktop) {
+        padding: 3rem;
+
+        width: 35%;
+    }
+}
+
+.footer__nav {
+    margin-top: 1.5rem;
+
+    width: 100%;
+    max-width: 22rem;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include breakpoint($mobile-iphone) {
+        margin-top: 1rem;
+
+        max-width: 27rem;
+    }
+
+    @include breakpoint($sm2-tablet) {
+        max-width: 31rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        max-width: 45rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        height: 43.5%;
+        align-items: flex-end;
+    }
+
+    @include breakpoint($b2-desktop) {
+        margin-top: 0;
+
+        max-width: none;
+        height: 50%;
+
+        align-items: flex-start;
+    }
+}
+
+.footer__nav-list {
+    padding-bottom: .5rem;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: .1rem solid $dark-grey;
+
+    @include breakpoint($sm1-desktop) {
+        padding-bottom: 1rem;
+    }
+}
+
+.footer__nav-item {
+    font-family: 'Pattaya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1;
+    color: $white;
+
+    @include breakpoint($mobile-iphone) {
+        font-size: 1.8rem;
+    }
+
+    @include breakpoint($mobile) {
+        font-size: 1.6rem;
+    }
+
+    @include breakpoint($sm2-tablet) {
+        font-size: 2rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        font-size: 2.7rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        font-size: 2.5rem;
+    }
+
+    @include breakpoint($desktop) {
+        font-size: 3rem;
+    }
+
+    @include breakpoint($b2-desktop) {
+        font-size: 3.3rem;
+    }
+}
+
+.footer__nav-link {
+    position: relative;
+
+    padding-bottom: .3rem;
+
+    &:hover {
+        color: $yellow;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: .1rem;
+
+        background-color: $yellow;
+        opacity: 0;
+
+        text-decoration: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+
+        transition: opacity .1s linear;
+    }
+
+    @include breakpoint($mobile-iphone) {
+        padding-bottom: .2rem;
+    }
+
+    @include breakpoint($sm2-tablet) {
+        padding-bottom: .1rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        padding-bottom: 0;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        padding-bottom: .6rem;
+    }
+
+    @include breakpoint($desktop) {
+        padding-bottom: .5rem;
+    }
+
+    @include breakpoint($b2-desktop) {
+        padding-bottom: .4rem;
+    }
+}
+
+.footer__nav-link:hover:after {
+    opacity: 1;
+}
+
+.footer__menu-image {
+    width: 19rem;
+
+    display: block;
+
+    @include breakpoint($mobile-iphone) {
+        width: 21rem;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        display: none;
+    }
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    font-size: .8rem;
+    color: $grey;
+
+    @include breakpoint($mobile-iphone) {
+        font-size: 1rem;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        font-size: 1.3rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        height: 50%;
+
+        align-items: center;
+
+        font-size: 1.5rem;
+    }
+
+    @include breakpoint($desktop) {
+        font-size: 1.8rem;
+    }
+
+    @include breakpoint($b2-desktop) {
+        font-size: 2rem;
+
+        align-items: flex-end;
+    }
+}
+
+/* Footer-center ==========================================
+==========================================================*/
+.footer__center {
+    width: 18%;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint($sm1-desktop) {
+        width: 20%;
+
+        display: flex;
+    }
+}
+
+.footer__center-title {
+    display: none;
+
+    font-size: 1.5rem;
+    color: $white;
+    text-transform: uppercase;
+
+    @include breakpoint($desktop) {
+        display: block;
+    }
+}
+
+.footer__center-list {
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint($mobile) {
+        display: none;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        display: flex;
+    }
+
+    &--hidden {
+        display: flex;
+
+        @include breakpoint($sm1-desktop) {
+            display: none;
+        }
+    }
+
+    &--menu {
+        display: none;
+
+        @include breakpoint($sm1-tablet) {
+            display: flex;
+        }
+
+        @include breakpoint($sm1-desktop) {
+            display: none;
+        }
+    }
+}
+
+
+/* Footer-right ===========================================
+==========================================================*/
+.footer__contacts {
+    padding-top: 1rem;
+
+    width: 35%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+
+    @include breakpoint($mobile) {
+        width: 50%;
+        align-items: flex-end;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        width: 40%;
+        align-items: baseline;
+    }
+
+    @include breakpoint($desktop) {
+        width: 39%;
+    }
+
+    @include breakpoint($b1-desktop) {
+        width: 41%;
+    }
+
+    @include breakpoint($b2-desktop) {
+        width: 45%;
+    }
+}
+
+.footer__contacts-title {
+    display: none;
+
+    width: 20%;
+
+    text-align: end;
+    font-family: 'Pattaya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1;
+    color: $white;
+
+    @include breakpoint($b2-desktop) {
+        display: block;
+    }
+}
+
+.footer__contacts-block {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint($mobile) {
+        width: 55%;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        width: 100%;
+    }
+
+    @include breakpoint($b2-desktop) {
+        width: 80%;
+    }
+}
+
+.footer__block-left {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint($sm1-tablet) {
+        padding-top: .5rem;
+
+        width: 50%;
+
+        .footer__center-list {
+            display: none;
+        }
+    }
+
+    @include breakpoint($b2-desktop) {
+        padding-top: 0rem;
+        padding-left: 2rem;
+    }
+}
+
+.footer__block-tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint($b2-desktop) {
+        justify-content: start;
+    }
+}
+
+.footer__block-tel-image {
+    margin-right: .5rem;
+    
+    width: 1.1rem;
+    height: 1.1rem;
+    background-color: $wave;
+    border-radius: .4rem;
+
+    fill: $white;
+
+    @include breakpoint($mobile-iphone) {
+        width: 1.2rem;
+        height: 1.3rem;
+    }
+
+    @include breakpoint($sm2-tablet) {
+        width: 1.6rem;
+        height: 1.7rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        margin-right: 1rem;
+
+        width: 2rem;
+        height: 2.1rem;
+    }
+
+    @include breakpoint($b2-desktop) {
+        width: 2.5rem;
+        height: 2.6rem;
+    }
+}
+
+.footer__block-tel-text {
+    font-size: 1.3rem;
+    color: $white;
+
+    @include breakpoint($mobile-iphone) {
+        font-size: 1.6rem;
+    }
+
+    @include breakpoint($sm2-tablet) {
+        font-size: 1.8rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        font-size: 2.2rem;
+    }
+
+    @include breakpoint($b2-desktop) {
+        font-size: 3rem;
+    }
+}
+
+.footer__block-left-button {
+    margin: 1rem auto;
+
+    @include breakpoint($mobile-iphone) {
+        margin: 1rem auto .5rem;
+    }
+
+    @include breakpoint($b2-desktop) {
+        margin: 2rem 2rem .5rem 2.5rem;
+    }
+}
+
+.footer__block-right {
+    display: none;
+
+    width: 50%;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint($sm1-tablet) {
+        display: flex;
+    }
+}
+
+.messenger__telegram, .messenger__viber, .messenger__whats_up {
+    margin-right: .5rem;
+
+    width: 4rem;
+    height: 4rem;
+
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: translateY(-.5rem);
+    }
+
+    @include breakpoint($sm1-desktop) {
+        margin-right: .8rem;
+
+        width: 5rem;
+        height: 5rem;
+    }
+
+}
+
+.messenger__telegram {
+    background-color: #039be5;
+    border-radius: 50%;
+}
+
+.telegram {
+    width: 2rem;
+    height: auto;
+    fill: $white;
+}
+.messenger__viber {
+    background-color: #6F3FAA;
+    border-radius: 50%;
+}
+
+.messenger__whats_up {
+    margin-right: 0;
+}
+
+.footer__block-right-button {
+    margin-top: 3rem;
+
+    @include breakpoint($mobile) {
+        margin: 1rem auto .5rem;
+    }
+
+    @include breakpoint($b2-desktop) {
+        margin: 3rem auto 0;
+    }
+}
+
+.footer__contacts-block-hidden {
+    display: none;
+
+    width: 45%;
+
+    align-items: center;
+    flex-direction: column;
+
+    @include breakpoint($mobile) {
+        display: flex;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        display: none;
+    }
+}
+
+.gmail {
+    display: none;
+
+    margin-bottom: .5rem;
+
+    width: 100%;
+    
+    justify-content: center;
+
+    @include breakpoint($mobile) {
+        display: flex;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        margin-bottom: 0.3rem;
+    }
+
+    @include breakpoint($b2-desktop) {
+        margin-bottom: 0;
+
+        width: 80%;
+    }
+}
+
+.gmail-img {
+    width: 1.6rem;
+    height: 1.6rem;
+
+    @include breakpoint($sm1-desktop) {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+.gmail-text {
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    color: $white;
+
+    @include breakpoint($sm1-desktop) {
+        font-size: 2.4rem;
+    }
+}

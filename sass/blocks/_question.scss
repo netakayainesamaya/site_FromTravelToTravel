@@ -1,0 +1,252 @@
+.question-bg {
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+
+    background-color: rgba(6, 15, 49, 0.5);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    &.show {
+        display: flex;
+    }
+
+    @include breakpoint ($desktop) {
+        justify-content: end;
+        align-items: flex-end;
+    }
+
+    &--tours {
+        @include breakpoint ($tablet) {
+            padding: 0 2rem;
+        }
+
+        @include breakpoint ($b1-tablet) {
+            padding: 0 3rem;
+        }
+
+        @include breakpoint ($desktop) {
+            padding: 0;
+        }
+    }
+
+    &--excursions {
+        @include breakpoint ($desktop) {
+            align-items: center;
+        }
+    }
+}
+
+.question {
+    position: relative;
+
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    max-width: 38rem;
+    width: 100%;
+    max-height: 47rem;
+
+    display: flex;
+    justify-content: center;
+
+    transform: rotateX(90deg);
+    transition: transform .2s linear;
+
+    &.show {
+        transform: rotateX(0);
+
+        &:hover {
+            .modal__close {
+                display: block;
+            }
+        }
+    }
+
+    @include breakpoint ($mobile-iphone) {
+        max-height: 51rem;
+    }
+
+    @include breakpoint ($mobile) {
+        max-width: 44rem;
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        padding: 0;
+
+        max-width: none;
+        width: 110rem;
+
+        justify-content: end;
+    }
+
+    @include breakpoint ($desktop) {
+        width: 115rem;
+    }
+
+    &--send {
+        @include breakpoint ($tablet) {
+            margin: 0 auto;
+            padding: 0;
+
+            max-width: 75rem;
+
+            justify-content: end;
+        }
+
+        @include breakpoint ($b1-tablet) {
+            max-width: 80rem;
+        }
+
+        @include breakpoint ($b2-tablet) {
+            max-width: 88rem;
+        }
+
+        @include breakpoint ($sm2-desktop) {
+            max-width: 98rem;
+        }
+
+        @include breakpoint ($sm1-desktop) {
+            max-width: 106rem;
+        }
+
+        @include breakpoint ($desktop) {
+            margin: 0 5rem 22.3rem 0;
+    
+            width: auto;
+        }
+    }
+
+    &--tours {
+        @include breakpoint ($tablet) {
+            margin: 0 auto;
+            padding: 0;
+
+            max-width: 77rem;
+
+            justify-content: end;
+        }
+
+        @include breakpoint ($b1-tablet) {
+            max-width: 79rem;
+        }
+
+        @include breakpoint ($b2-tablet) {
+            max-width: 87rem;
+        }
+
+        @include breakpoint ($sm1-desktop) {
+            max-width: 110rem;
+        }
+
+        @include breakpoint ($desktop) {
+            margin: 0 5rem 22.3rem 0;
+    
+            width: auto;
+        }
+    }
+
+    &--excursions {
+        @include breakpoint ($tablet) {
+            margin: 0 5rem;
+            padding: 0;
+
+            max-width: 130rem;
+
+            justify-content: end;
+        }
+
+        @include breakpoint ($b1-tablet) {
+            margin: 0 7rem;
+        }
+
+        @include breakpoint ($sm2-desktop) {
+            margin: 0 10rem;
+        }
+
+        @include breakpoint ($sm1-desktop) {
+            margin: 0 auto;
+
+            max-width: 110rem;
+        }
+
+        @include breakpoint ($desktop) {
+            margin: 0 5rem 22.3rem 0;
+    
+            width: auto;
+        }
+    }
+
+    &--services {
+        @include breakpoint ($tablet) {
+            padding: 0;
+
+            max-width: 76rem;
+
+            justify-content: end;
+        }
+
+        @include breakpoint ($b1-tablet) {
+            max-width: 78rem;
+        }
+
+        @include breakpoint ($b2-tablet) {
+            max-width: 86rem;
+        }
+
+        @include breakpoint ($desktop) {
+            margin: 0 5rem 22.3rem 0;
+    
+            width: auto;
+        }
+    }
+}
+
+.obility__form {
+    width: 40rem;
+
+    background-color: $white;
+
+    &--obility {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        background-color: transparent;
+
+        @include breakpoint($b1-tablet) {
+            width: 40%;
+        }
+    
+        @include breakpoint($sm2-desktop) {
+            width: 45%;
+        }
+    }
+
+    &--obility4 {
+        @include breakpoint($b1-tablet) {
+            position: absolute;
+            top: 4%;
+            left: 0;
+            z-index: 100;
+
+            width: 40%;
+        }
+
+        @include breakpoint($sm1-desktop) {
+            position: static;
+            top: auto;
+            left: auto;
+
+            width: 45%;
+        }
+    }
+}

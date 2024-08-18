@@ -1,0 +1,342 @@
+.obility__main {
+    @include breakpoint($sm1-tablet) {
+        margin: 0 1rem;
+    }
+
+    @include breakpoint($tablet) {
+        margin: 0 3rem;
+    }
+
+    @include breakpoint($b1-tablet) {
+        margin: 0 4rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        margin: 0 10rem;
+    }
+
+    @include breakpoint($desktop) {
+        margin: 0 8rem;
+    }
+
+    @include breakpoint($b1-desktop) {
+        margin: 0 auto;
+    }
+}
+
+.obility__title {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    display: none;
+
+    font-family: 'Pattaya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    word-spacing: 2.5rem;
+    font-size: 3.5rem;
+
+    text-align: center;
+
+    @include breakpoint($mobile) {
+        font-size: 4.5rem;
+    }
+
+    @include breakpoint($big-mobile) {
+        font-size: 6rem;
+    }
+
+    @include breakpoint($b2-tablet) {
+        display: block;
+
+        margin-bottom: 5rem;
+    }
+
+    &--short {
+        display: block;
+
+        @include breakpoint($b2-tablet) {
+            display: none;
+        }
+    }
+}
+
+.obility__text {
+    margin-bottom: 1.5rem;
+
+    font-size: 1.8rem;
+
+    p {
+        margin-bottom: 1rem;
+
+        text-align: justify;
+    }
+
+    @include breakpoint($big-mobile) {
+        font-size: 2rem;
+        text-indent: 4rem;
+    }
+}
+
+.obility__map {
+    margin: 2rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint($b2-tablet) {
+        margin: 4rem 1rem 4rem 1rem;
+    }
+
+    &:hover {
+        cursor: zoom-in;
+    }
+
+    &.zoom {
+        margin: 0;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+
+        background-color: rgba(6, 15, 49, 0.9);
+
+        width: 100%;
+        height: 100%;
+
+        &:hover {
+            cursor: zoom-out;
+        }
+    }
+}
+
+.obility__img {
+    max-width: 125rem;
+    width: 100%;
+
+    border-radius: .5rem;
+    box-shadow: 0 .4rem 4.5rem rgba($wave, .95);
+}
+
+.obility__route {
+    position: relative;
+
+    margin-top: 2rem;
+    
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint($sm1-tablet) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    @include breakpoint($tablet) {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    @include breakpoint($b1-tablet) {
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 2rem;
+
+        align-items: center;
+    }
+
+    @include breakpoint($b2-tablet) {
+        margin-top: 5rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    @include breakpoint($desktop) {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    &--obility2 {
+        padding-bottom: 0;
+
+        @include breakpoint($b2-tablet) {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.obility__result {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include breakpoint($b1-tablet) {
+        padding-left: 2rem;
+
+        width: 60%;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        padding-left: 0;
+
+        width: 55%;
+    }
+
+    &--obility {
+        @include breakpoint($b1-tablet) {
+            width: 100%;
+        }
+
+        @include breakpoint($sm1-desktop) {
+            width: 55%;
+        }
+    }
+}
+
+.result__container {
+    display: none;
+    justify-content: center;
+
+    @include breakpoint($b2-tablet) {
+        display: flex;
+    }
+}
+
+.result__image {
+    width: 25rem;
+
+    @include breakpoint($sm1-desktop) {
+        width: 30rem;
+    }
+
+    @include breakpoint($b1-desktop) {
+        margin-bottom: 1rem;
+    }
+}
+
+.obility__subtitle {
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+
+    font-family: 'Marck Script', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+
+    @include breakpoint($big-mobile) {
+        margin-top: 3rem;
+
+        text-align: center;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        font-size: 3rem;
+    }
+
+    @include breakpoint($b1-tablet) {
+        margin-top: 0;
+
+        text-align: start;
+    }
+
+    @include breakpoint($b2-tablet) {
+        margin-bottom: 3rem;
+
+        font-size: 3.5rem;
+    }
+}
+
+.obility__subtitle__text {
+    font-style: oblique;
+    font-size: 1.8rem;
+    opacity: .5;
+
+    p {
+        margin-bottom: 1rem;
+
+        @include breakpoint($b2-tablet) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    @include breakpoint($big-mobile) {
+        font-size: 2rem;
+
+        text-align: center;
+    }
+
+    @include breakpoint($b1-tablet) {
+        text-align: start;
+    }
+
+    &--obility2 {
+        margin-top: 3rem;
+
+        @include breakpoint($b1-tablet) {
+            margin-top: 2rem;
+        }
+    }
+
+    &--obility4 {
+        margin-top: 3rem;
+
+        @include breakpoint($b1-tablet) {
+            margin-top: 0;
+
+            float: right;
+            width: 100%;
+
+            &::before {
+                content: "";
+                width: 42%;
+                height: 49rem;
+    
+                float: left;
+            }
+        }
+
+        @include breakpoint($b2-tablet) {
+            &::before {
+                width: 40%;
+            }
+        }
+
+        @include breakpoint($sm2-desktop) {
+            &::before {
+                width: 42%;
+            }
+        }
+
+        @include breakpoint($sm1-desktop) {
+            &::before {
+                display: none;
+                
+                width: 0;
+                height: 0;
+
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.obility-href {
+    opacity: 1;
+    color: $pink;
+
+    &:hover {
+        color: $yellow;
+    }
+}

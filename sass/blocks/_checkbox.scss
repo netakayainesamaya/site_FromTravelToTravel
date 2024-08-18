@@ -1,0 +1,98 @@
+.checkbox {
+}
+
+.checkbox__container {
+    display: flex;
+    align-items: center;
+    
+    cursor: pointer;
+}
+
+.checkbox + .checkbox {
+	margin-top: .2rem;
+}
+
+.checkbox__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.checkbox__input:focus + .checkbox__label {
+    box-shadow: 0px 0px 0px 1px $green-wave, 0px 0px 10px $grey;
+}
+
+.checkbox__label {
+    position: relative;
+    display: inline-block; /* чтобы span из inline-элемента был переведён в inline-block и хорошо работал с блочной моделью */
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: $white;
+    border: 2px solid $grey;
+    border-radius: 50%;
+    margin-right: 1rem;
+
+    font-size: 0;
+}
+
+.checkbox__input:checked + .checkbox__label {
+    background-color: $black;
+    border-color: $grey;
+
+    opacity: .7;
+
+    @include breakpoint ($desktop) {
+        background-color: $wave;
+        border-color: $wave;
+
+        opacity: 1;
+    }
+}
+
+.checkbox__label::before {
+    content: '';
+
+    /* Рисуем галочку */
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+
+    background-image: url('./../../img/tick-mark.svg');
+    background-size: contain; /* чтобы разместилась полностью и правильно масштабировалась */
+    background-repeat: no-repeat;
+
+    /* Выравниваем по центру */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+
+    transition: .2s ease-in;
+}
+
+/* Активируем фейковый или декоративный чекбоокс */
+.checkbox__input:checked + .checkbox__label::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.checkbox__text {
+    font-size: 1.7rem;
+    color: $black;
+    opacity: .7;
+
+    @include breakpoint ($sm2-tablet) {
+        font-size: 1.5rem;
+    }
+
+    @include breakpoint ($tablet) {
+        font-size: 1.7rem;
+    }
+
+    @include breakpoint ($desktop) {
+        font-size: 1.5rem;
+        color: $dark-grey;
+        opacity: 1;
+    }
+}

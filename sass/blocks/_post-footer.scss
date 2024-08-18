@@ -1,0 +1,384 @@
+/* Footer =================================================
+==========================================================*/
+.post__footer {
+    padding: 3rem 0 0 1.5rem;
+
+    width: 20%;
+    display: none;
+    flex-direction: column;
+
+    position: relative;
+
+    @include breakpoint($b1-tablet) {
+        display: flex;
+    }
+    
+    @include breakpoint($sm2-desktop) {
+        padding: 2rem 0 0 2.5rem;
+
+        width: 27%;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        width: 25%;
+    }
+}
+
+.post__date {
+    margin: 0;
+    width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    @include breakpoint($big-mobile) {
+        margin-left: 1.2rem;
+        width: 85%;
+    }
+
+    @include breakpoint($tablet) {
+        margin-left: 3.2rem;
+    }
+
+    @include breakpoint($b1-tablet) {
+        margin-left: 0;
+        
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        margin-bottom: 1rem;
+        margin-top: 1.8rem;
+
+        flex-direction: row;
+    }
+}
+
+.post__days {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint($big-mobile) {
+        justify-content: start;  
+    }
+
+    @include breakpoint($b1-tablet) {
+        margin: .8rem 0;
+
+        width: 100%;  
+    }
+
+    @include breakpoint($sm2-desktop) {
+        margin: 0;
+        width: 50%;
+    }
+}
+
+.post__days-image {
+    margin-right: 1rem;
+
+    width: 1.8rem;
+    height: 1.8rem;
+
+    @include breakpoint($sm2-tablet) {
+        margin-right: .8rem;
+
+        width: 2.5rem;
+        height: 2.5rem;  
+    }
+
+    &--boy {
+        margin-right: .4rem;
+    }
+}
+
+.post__days-text {
+    font-size: 1.6rem;
+
+    @include breakpoint($sm2-tablet) {
+        font-size: 2rem;    
+    }
+}
+
+.post__cost {
+    margin-top: 1.3rem;
+
+    width: 65%;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+
+    @include breakpoint($sm2-tablet) {
+        margin-bottom: .2rem;
+
+        width: 68%;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        width: 59%;
+    }
+
+    @include breakpoint($tablet) {
+        width: 63%;
+    }
+
+    @include breakpoint($b1-tablet) {
+        margin: 3rem 0 2rem 0;
+
+        width: 100%;
+
+        display: block;
+        align-items: baseline;
+        justify-content: start;
+        align-items: baseline;
+    }
+
+    &.show {
+        margin: 2rem 0 1rem 0;
+
+        animation: marginPostCost .5s ease-in-out forwards;
+    }
+}
+
+.old__price {
+    margin-right: 1rem;
+
+    font-size: 1.4rem;
+    text-decoration: line-through;
+    opacity: .5;
+
+    @include breakpoint($sm2-tablet) {
+        margin-right: 2rem;
+
+        font-size: 1.6rem;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        font-size: 2rem;
+    }
+
+    @include breakpoint($b1-tablet) {
+        font-size: 2.2rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        margin-right: 0rem;
+
+        font-size: 2.5rem;
+    }
+}
+
+.new__price {    
+    margin-right: 2.5rem;
+
+    font-size: 2rem;
+    color: $pink;
+
+    @include breakpoint($sm2-tablet) {
+        margin-right: 0;
+
+        font-size: 2.2rem;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        font-size: 2.6rem;
+    }
+
+    @include breakpoint($b1-tablet) {
+        font-size: 2.8rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        font-size: 3rem;
+    }
+}
+
+.comming__date {
+    margin-top: 1.5rem;
+
+    @include breakpoint($b1-tablet) {
+        display: none;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        display: block;
+    }
+
+    &.show {
+        margin-top: 0.5rem;
+
+        animation: marginCommingDate .5s ease-in-out forwards;
+    }
+}
+
+.comming__date-title {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.comming__date-container {
+    margin-left: .5rem;
+    margin-top: .5rem;
+
+    height: 4.4rem;
+    width: 60%;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    font-weight: 400;
+    font-size: 1.8rem;
+
+    &.show {
+        height: 8.8rem;
+
+        animation: heightCommingDate .5s ease-in-out forwards;
+    }
+}
+
+.post__btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* Etc =====================================================
+==========================================================*/
+.etc {
+    margin: .3rem 0 0;
+
+    position: relative;
+
+    width: 6rem;
+
+    display: none;
+    align-items: flex-end;
+
+    color: $black;
+    cursor: pointer;
+
+    &:hover {
+        .etc__text {
+            color: $dark-grey;
+        }
+
+        .etc__icon-container {
+            fill: $dark-grey;
+            opacity: .5;
+        }
+    }
+
+    &.show {
+        display: flex;
+
+        animation: showBlock .5s ease-in-out forwards;
+    }
+
+    &--roll__up {
+        margin-top: .5rem;
+
+        display: none;
+
+        @include breakpoint ($mobile) {
+            margin-top: 0;
+            margin-bottom: .5rem;
+        }
+
+        @include breakpoint ($sm2-tablet) {
+            margin-top: .5rem;
+            margin-bottom: 0;
+        }
+
+        &.show {
+            display: flex;
+
+            animation: showBlock .5s ease-in-out forwards;
+        }
+    }
+
+    &--calendar {
+        margin: 0;
+
+        display: none;
+
+        @include breakpoint ($mobile) {
+            margin: 0;
+            margin-bottom: .5rem;
+        }
+
+        @include breakpoint ($sm2-tablet) {
+            margin: .3rem 0 0;
+        }
+
+        &.show {
+            display: flex;
+
+            animation: showBlock .5s ease-in-out forwards;
+        }
+    }
+
+    @include breakpoint ($sm2-tablet) {
+        opacity: .5;
+    }
+}
+
+.etc__text {
+    margin-left: 1rem;
+
+    font-size: 1.5rem;
+    opacity: .5;
+
+    @include breakpoint ($big-mobile) {
+        font-size: 1.6rem;
+    }
+
+    @include breakpoint ($sm2-tablet) {
+        font-size: 1.8rem;
+    }
+}
+
+.etc__icon-container {
+    margin-left: .5rem;
+
+    display: flex;
+
+    fill: $dark-grey;
+
+    @include breakpoint ($big-mobile) {
+        margin-bottom: .12rem;
+    }
+
+    @include breakpoint ($sm2-tablet) {
+        margin-bottom: .2rem;
+
+        fill: $black;
+        opacity: .5;
+    }
+}
+
+.etc__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Footer-block ===========================================
+==========================================================*/
+.post__footer-block {
+    width: 100%;
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @include breakpoint($b1-tablet) {
+        display: none;
+    }
+}

@@ -1,0 +1,199 @@
+[
+    {
+        "id": 1,
+        "picture": "fiolent",
+        "title": "\"Крымские Мальдивы\"",
+        "shortTitle": "Фиолент",
+        "price": "от 7000 руб"
+    },
+    {
+        "id": 2,
+        "picture": "diva",
+        "title": "Легенды о горе Кошка и скале Дива",
+        "shortTitle": "Симеиз",
+        "price": "от 1500 руб"
+    },
+    {
+        "id": 3,
+        "picture": "new_world",
+        "title": "Новый Свет. Тропа Галицына. Мыс Капчик",
+        "shortTitle": "Новый Свет",
+        "price": "от 20000 руб"
+    },
+    {
+        "id": 4,
+        "picture": "sunset_ai_petri",
+        "title": "Закат на \"короне\" Ай-Петри",
+        "shortTitle": "Ай-Петри",
+        "price": "от 1500 руб"
+    },
+    {
+        "id": 5,
+        "picture": "coctebel",
+        "title": "Джазовая столица Крыма - Коктебель",
+        "shortTitle": "Коктебель",
+        "price": "от 8000 руб"
+    },
+    {
+        "id": 6,
+        "picture": "demerdgi",
+        "title": "Трекинг к вершине Южной Демерджи",
+        "shortTitle": "Демерджи",
+        "price": "от 4000 руб"
+    },
+    {
+        "id": 7,
+        "picture": "foros",
+        "title": "Удивительные места Фороса",
+        "shortTitle": "Форос",
+        "price": "от 12000 руб"
+    },
+    {
+        "id": 8,
+        "picture": "mangup-cale",
+        "title": "Средневековье в Крыму",
+        "shortTitle": "Мангул-Кале",
+        "price": "от 3000 руб"
+    },
+    {
+        "id": 9,
+        "picture": "turquoise_lake",
+        "title": "Бирюзовое озеро",
+        "shortTitle": "Бирюзовое озеро",
+        "price": "от 1500 руб"
+    },
+    {
+        "id": 10,
+        "picture": "cheese_mountains",
+        "title": "Сырные скалы",
+        "shortTitle": "Сырные скалы",
+        "price": "от 6000 руб"
+    },
+    {
+        "id": 11,
+        "picture": "popovka",
+        "title": "Z-City. Три озера",
+        "shortTitle": "Z-City",
+        "price": "от 33000 руб"
+    },
+    {
+        "id": 12,
+        "picture": "cliff",
+        "title": "Утёс \"Санта-Барбара\"",
+        "shortTitle": "Санта-Барбара",
+        "price": "от 1500 руб"
+    },
+    {
+        "id": 13,
+        "picture": "report_alupka",
+        "title": "Алупка, Ласточкино гнездо",
+        "shortTitle": "Алупка",
+        "price": "от 1300 руб"
+    },
+    {
+        "id": 14,
+        "picture": "temple_sun",
+        "title": "Храм Солнца",
+        "shortTitle": "Храм Солнца",
+        "price": "от 1300 руб"
+    },
+    {
+        "id": 15,
+        "picture": "balaclava",
+        "title": "\"Крымская Венеция\"",
+        "shortTitle": "Балаклава",
+        "price": "от 18000 руб"
+    },
+    {
+        "id": 16,
+        "picture": "botkinskaya",
+        "title": "Легендарная Боткинская тропа",
+        "shortTitle": "Боткинская",
+        "price": "от 2000 руб"
+    },
+    {
+        "id": 17,
+        "picture": "canyon",
+        "title": "Большой каньон Крым",
+        "shortTitle": "Большой каньон",
+        "price": "от 3300 руб"
+    },
+    {
+        "id": 18,
+        "picture": "uch_kosh",
+        "title": "Ущелье Уч-Кош",
+        "shortTitle": "Ущелье Уч-Кош",
+        "price": "от 1900 руб"
+    },
+    {
+        "id": 19,
+        "picture": "tarhankut",
+        "title": "Тарханкут - на край крымской земли!",
+        "shortTitle": "Тарханкут",
+        "price": "от 35000 руб"
+    },
+    {
+        "id": 20,
+        "picture": "cape_aiya",
+        "title": "Затерянный мир Айя",
+        "shortTitle": "Мир Айя",
+        "price": "от 3300 руб"
+    },
+    {
+        "id": 21,
+        "picture": "switzerland",
+        "title": "Крымская Швейцария",
+        "shortTitle": "Швейцария",
+        "price": "от 4500 руб"
+    },
+
+    {
+        "id": 22,
+        "picture": "feodosia",
+        "title": "Семь Чудес Киммерии",
+        "shortTitle": "Феодосия",
+        "price": "от 23000 руб"
+    },    
+    {
+        "id": 23,
+        "picture": "chatyr_dag",
+        "title": "К вершинам Чатыр-Дага",
+        "shortTitle": "Чатыр-Даг",
+        "price": "от 3900 руб"
+    },
+    {
+        "id": 24,
+        "picture": "bakhchisarai",
+        "title": "К столице Крымского ханства",
+        "shortTitle": "Бахчисарай",
+        "price": "от 4200 руб"
+    },
+    {
+        "id": 25,
+        "picture": "caves",
+        "title": "Мраморные пещеры",
+        "shortTitle": "Пещеры",
+        "price": "от 1800 руб"
+    },
+    {
+        "id": 26,
+        "picture": "hike",
+        "title": "Горы Море Облака",
+        "shortTitle": "Горы Море",
+        "price": "от 12000 руб"
+    },
+    {
+        "id": 27,
+        "picture": "shore",
+        "title": "Идиальный берег Крыма",
+        "shortTitle": "Берег Крыма",
+        "price": "от 2000 руб"
+    },
+    {
+        "id": 28,
+        "picture": "eski_kermen",
+        "title": "Эски-Кермен",
+        "shortTitle": "Эски-Кермен",
+        "price": "от 9500 руб"
+    }
+]

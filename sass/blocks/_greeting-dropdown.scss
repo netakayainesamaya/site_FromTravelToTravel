@@ -1,0 +1,306 @@
+// -> greeting
+
+.greeting__form-dropdown-constructor {
+    padding: 3rem 3rem 1rem 3rem;
+
+    @include breakpoint($big-mobile) {
+        padding-top: 2rem;
+    }
+
+    @include breakpoint($b2-tablet) {
+        padding-top: 2.5rem;
+        padding-bottom: 1.8rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        padding: 1rem 3rem 2.5rem 3rem;
+    }
+
+    @include breakpoint($desktop) {
+        padding: 3rem;
+    }
+
+    @include breakpoint($b2-desktop) {
+        padding-bottom: 2rem;
+    }
+}
+
+.greeting__form-dropdown {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint($sm2-desktop) {
+        align-items: flex-end;
+    }
+
+    &--question {
+        margin-top: .5rem;
+
+        width: 90%;
+
+        @include breakpoint($mobile-iphone) {
+            width: 80%;
+        }
+
+        @include breakpoint($mobile) {
+            margin-top: 0;
+
+            width: 90%;
+        }
+    }
+}
+
+.dropdown__title {
+    padding: 1rem .5rem .2rem .5rem;
+
+    display: none;
+
+    font-size: 2.3rem;
+    color: #fff;
+    text-shadow: #18e3cf 0 0 1rem;
+
+    @include breakpoint($sm2-desktop) {
+        display: block;
+    }
+
+    @include breakpoint($desktop) {
+        padding: 1.5rem .5rem .5rem .5rem;
+
+        font-size: 3rem;
+    }
+}
+
+.dropdown__button {
+    position: relative;
+
+    margin: 1rem 0;
+    padding: 0.1em;
+
+    width: 100%;
+
+    display: block;
+    
+    background-color: $wave;
+    border: 1px solid $white;
+    border-radius: 6px;
+
+    box-shadow: 0 0.6rem 0.8rem hsl(0deg 0% 100% / 80%);
+    
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.4rem;
+    text-align: center;
+    color: $white;
+
+    text-shadow: 0 0.6rem 0.8rem rgb(0 0 0 / 30%);
+    
+    cursor: pointer;
+
+    transition: background-color .2s ease-in;
+
+    &:hover {
+        background-color: $green-wave;
+    }
+
+    @include breakpoint($b1-tablet) {
+        font-size: 1.8rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        margin: .5rem 0;
+        padding: 0.1em 1.8em 0.1em 0.1em;
+
+        font-size: 2.3rem;
+        text-align: end;
+    }
+
+    @include breakpoint($desktop) {
+        font-size: 2.5rem;
+    }
+
+    &--question {
+        margin: 0;
+        padding-right: .5rem;
+
+        // display: none;
+
+        font-size: 2rem;
+        text-align: center;
+
+        @include breakpoint($mobile) {
+            // display: block;
+
+            padding-right: .2rem;
+        }
+
+        @include breakpoint($b2-tablet) {
+            padding-right: 1.8rem;
+
+            font-size: 2.3rem;
+        }
+    }
+
+    // &--short {
+    //     margin: 0;
+    //     // margin-bottom: .5rem;
+
+    //     display: block;
+
+    //     // @include breakpoint($mobile-iphone) {
+    //     //     margin: 1rem 0;
+    //     // }
+
+    //     @include breakpoint($mobile) {
+    //         display: none;
+    //     }
+    // }
+}
+
+.dropdown__button:focus, .dropdown__button--active {
+    outline: none;
+    box-shadow: 0px 0px 0px 4px rgba(176, 198, 255, 0.6);
+}
+
+.dropdown__button::after {
+    content: '';
+    position: absolute;
+    top: 55%;
+    right: .9rem;
+    transform: translateY(-50%);
+
+    /* Рисуем треугольник */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: .74rem .6rem 0 .6rem;
+    border-color: $white transparent transparent transparent;
+
+    /* Снимаем активный клик с треугольника */
+    pointer-events: none;
+
+
+    @include breakpoint($sm2-desktop) {
+        top: 57%;
+
+        border-width: .8rem .7rem 0 .7rem;
+    }
+
+    @include breakpoint($desktop) {
+        border-width: 1.1rem .8rem 0 .8rem;
+    }
+}
+
+.dropdown__button--question::after {
+    border-width: .8rem .7rem 0 .7rem;
+
+    @include breakpoint($sm1-desktop) {
+        border-width: 1.1rem .8rem 0 .8rem;
+    }
+}
+
+.dropdown__list {
+    display: none;
+
+    position: absolute;
+    left: 0;
+    top: -360%;
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    background: $wave;
+    box-shadow: 0px 4px 8px rgba(176, 198, 255, 0.6);
+    overflow: hidden;
+
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: $white;
+    text-align: center;
+
+    border-radius: 6px;
+    width: 100%;
+
+    z-index: 1;
+
+    @include breakpoint($mobile-iphone) {
+        top: 100%;
+    }
+
+    @include breakpoint($b1-tablet) {
+        font-size: 1.5rem;
+    }
+
+    @include breakpoint($b2-tablet) {
+        font-size: 1.8rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        top: 100%;
+
+        font-size: 2.1rem;
+        text-align: end;
+    }
+
+    &--greeting {
+        top: 80%;
+
+        @include breakpoint($sm2-desktop) {
+            top: 100%;
+        }
+    }
+}
+
+.dropdown__list--visible {
+    display: block;
+}
+
+.dropdown__list-item {
+    margin: 0;
+    padding: 0.1em 1.8em 0.1em 0.1em;
+
+    border: 1px solid $white;
+    border-bottom: 0px; /* чтобы рамки не накладывались друг на друга */
+    cursor: pointer;
+
+    &--choice {
+        background: $green-wave;
+    }
+
+    &.hide {
+        display: none;
+    }
+
+    &--question {
+        padding-right: 0;
+
+        font-size: 1.8rem;    
+
+        @include breakpoint($mobile-iphone) {
+            padding-right: 1.5rem;
+        }
+
+        @include breakpoint($b2-tablet) {
+            padding-right: 1.8rem;
+
+            font-size: 2rem;
+        }
+    }
+}
+
+.dropdown__list-item:first-child {
+    border-radius: 6px 6px 0 0;
+}
+
+.dropdown__list-item:last-child {
+    border-radius: 0 0 6px 6px;
+    border-bottom: 1px solid $white;
+}
+
+.dropdown__list-item:hover {
+    background: $green-wave;
+}

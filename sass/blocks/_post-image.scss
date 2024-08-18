@@ -1,0 +1,265 @@
+.post__image {
+    width: 100%;
+    height: 20rem;
+
+    background-color: $wave;
+
+    position: relative;
+
+    &:hover {
+        .post__mask {
+            transform: translate3d(-1rem, 1rem, 0);
+
+            @include breakpoint($sm2-tablet) {
+                transform: translate3d(1.1rem, 1.1rem, 0);
+            }
+
+            @include breakpoint($desktop) {
+                transform: translate3d(-1rem, -1rem, 0);
+            }
+        }
+
+        .post__img {
+            opacity: .2;
+        }
+
+        .post__set, .post__type {
+            display: none;
+        }
+    }
+
+    @include breakpoint($big-mobile) {
+        width: 37%;
+        height: 27.5rem;
+    }
+
+    @include breakpoint($sm2-tablet) {
+        height: 30rem;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        height: 30.5rem;
+    }
+
+    @include breakpoint($tablet) {
+        height: 35rem;
+    }
+
+    @include breakpoint($b1-tablet) {
+        width: 32%;
+        height: 34rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        width: 30%;
+        height: 37rem;
+    }
+}
+
+.post__mask {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(to bottom, $pink, $yellow);
+    transition: transform .2s linear;
+
+    &:hover {
+        .post__social {
+            display: block;
+        }
+
+        .post__type-right {
+            display: none;
+        }
+    }
+}
+
+.post__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0);
+    transition: opacity .1s linear;
+}
+
+.post__set {
+    width: 53%;
+    position: relative;
+    top: 10.5rem;
+    left: 0;
+    z-index: 2;
+
+    @include breakpoint($big-mobile) {
+        width: 80%;
+
+        top: 16rem;
+    }
+
+    @include breakpoint($sm2-tablet) {
+        width: 66%;
+
+        top: 18.5rem;
+    }
+
+    @include breakpoint($tablet) {
+        top: 22rem;
+        width: 56%;
+    }
+
+    @include breakpoint($b1-tablet) {
+        width: 62%;
+    }
+
+    
+    @include breakpoint($b2-tablet) {
+        width: 58%;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        width: 50%;
+    }
+
+    @include breakpoint($desktop) {
+        top: 4rem;
+    }
+}
+
+.set__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.set__arrows {
+    width: 20%;
+
+    fill: $white;
+
+    position: absolute;
+    top: -5.3rem;
+    left: 1.1rem;
+    z-index: 3;
+
+    &--header {
+        height: 70%;
+        top: 15%;
+        left: 3%;
+        z-index: 1;
+
+        @include breakpoint($mobile) {
+            left: 2%;
+        }
+    }
+
+    @include breakpoint($big-mobile) {
+        width: 16%;
+
+        left: .8rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        width: 20%;
+        
+        left: 1.1rem;
+    }
+
+    &--obility {
+        @include breakpoint($big-mobile) {
+            width: 21%;
+            height: 70%;
+            
+            top: 15%;
+            left: 3%;
+        }
+    }
+}
+
+.set__text {
+    margin-top: 0.3em;
+
+    position: absolute;
+    top: 0;
+    left: 35%;
+    z-index: 3;
+
+    font-size: 1.5rem;
+    color: $white;
+
+    @include breakpoint($big-mobile) {
+        left: 29%;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        left: 35%;
+    }
+}
+
+.post__type {
+    width: 53%;
+    position: relative;
+    top: 16.5rem;
+    left: 0;
+    z-index: 2;
+
+    @include breakpoint($big-mobile) {
+        width: 80%;
+
+        top: 21rem;
+    }
+
+    @include breakpoint($sm2-tablet) {
+        width: 66%;
+
+        top: 24rem;
+    }
+
+    @include breakpoint($tablet) {
+        top: 27.5rem;
+        width: 56%;
+    }
+
+    @include breakpoint($b1-tablet) {
+        width: 62%;
+    }
+
+    @include breakpoint($b2-tablet) {
+        width: 58%;
+    }
+
+
+    @include breakpoint($sm2-desktop) {
+        width: 50%;
+    }
+
+    @include breakpoint($desktop) {
+        top: 10rem;
+    }
+}
+
+.type__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.type__text {
+    margin-top: .2rem;
+
+    position: absolute;
+    top: 0;
+    left: 15%;
+    z-index: 3;
+
+    font-size: 1.5rem;
+    color: $white;
+}
+

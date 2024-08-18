@@ -1,0 +1,451 @@
+.day__content {
+    width: 100%;
+
+    @include breakpoint ($sm1-desktop) {
+        width: 58%;
+    }
+}
+
+.tours__images {
+    position: absolute;
+
+    max-width: 52rem;
+    width: 100%;
+    height: 30rem;
+
+    overflow: hidden;
+
+    border-radius: 1rem;
+    box-shadow: 0 .4rem 3rem rgba($wave, .95);
+
+    &:hover {
+        @include breakpoint ($mobile) {
+            .tours__arrows {
+                display: block;
+            }
+
+            .tours__arrows-next {
+                display: block;
+            }
+        }
+    }
+
+    @include breakpoint ($mobile) {
+        height: 35rem;
+    }
+
+    @include breakpoint ($sm1-tablet) {
+        height: 41rem;
+    }
+
+    @include breakpoint ($tablet) {
+        width: 50%;
+        height: 40rem;
+
+        right: 0;
+
+        box-shadow: 0 .2rem 2.5rem rgba($wave, .95);
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        position: static;
+
+        width: 45%;
+        height: 52rem;
+
+        box-shadow: 0 .4rem 4.5rem rgba($wave, .95);
+    }
+
+    @include breakpoint ($desktop) {
+        width: 42%;
+    }
+}
+
+.tours__images-slider {
+    position: relative;
+}
+
+.tours__arrows, .tours__arrows-next {
+    display: none;
+
+    position: absolute;
+    bottom: 2%;
+    z-index: 1;
+}
+
+.tours__arrows {
+    left: -.5rem;
+}
+
+.tours__arrows-next {
+    right: -.5rem;
+}
+
+.tours__images-wrapper {
+	overflow: hidden;
+}
+
+.tours__images-items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+
+.day__images {
+    overflow: hidden;
+
+    flex: 0 0 100%;
+
+    height: 30rem;
+
+    position: relative;
+
+    @include breakpoint ($mobile) {
+        height: 35rem;
+    }
+
+    @include breakpoint ($sm1-tablet) {
+        height: 41rem;
+    }
+
+    @include breakpoint ($tablet) {
+        height: 40rem;
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        height: 52rem;
+    }
+}
+.day_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+
+    transform: translate3d(-50%, -50%, 0);
+}
+
+/* индикаторы */
+
+.slider__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .slider__indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-clip: padding-box;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+  
+  .slider__indicators li.active {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+.day__flag {
+    width: 22rem;
+    height: 6.5rem;
+    background: url('./../../img/post__preview/post_set.svg') center no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    top: 3%;
+    z-index: 1;
+
+    @include breakpoint ($tablet) {
+        position: relative;
+        top: -.5rem;
+        left: .5rem;
+
+        width: 27rem;
+        height: 9.3rem;
+    }
+
+    @include breakpoint ($desktop) {
+        top: auto;
+        left: auto;
+
+        width: 30rem;
+    }
+}
+
+.day__flag-img {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    fill: $white;
+
+    position: absolute;
+    top: 23%;
+    left: 8%;
+    z-index: 2;
+
+    @include breakpoint ($tablet) {
+        width: 4rem;
+        height: 4rem;
+
+        top: 30%;
+        left: 10%;
+    }
+
+    @include breakpoint ($desktop) {
+        width: 5rem;
+        height: 5rem;
+
+        top: 23%;
+        left: 10%;
+    }
+}
+
+.day__flag-name {
+    margin-left: 7rem;
+
+    font-size: 3.5rem;
+    color: $white;
+
+    @include breakpoint ($tablet) {
+        margin-left: 9rem;
+
+        font-size: 4rem;
+    }
+
+    @include breakpoint ($desktop) {
+        margin-left: 10rem;
+
+        font-size: 5rem;
+    }
+}
+
+.day__item {
+    margin-top: 31.5rem;
+    padding-left: 1rem;
+
+    width: 100%;
+
+    display: flex;
+
+    @include breakpoint ($mobile) {
+        margin-top: 37rem;
+    }
+
+    @include breakpoint ($sm1-tablet) {
+        margin-top: 43rem;
+    }
+
+    @include breakpoint ($tablet) {
+        margin-top: 1rem;
+        padding-right: 1rem;
+
+        width: 49%;
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        margin: 0;
+        padding: 1rem 2rem 0 2rem;
+
+        width: 100%;
+    }
+
+    @include breakpoint ($desktop) {
+        padding: 3rem 4rem 0 3rem;
+    }
+
+    &--dinner {
+        margin-top: 1rem;
+
+        align-items: flex-end;
+
+        @include breakpoint ($big-mobile) {
+            align-items: flex-start;
+        }
+
+        @include breakpoint ($tablet) {
+            margin-top: 2rem;
+        }
+
+        @include breakpoint ($sm1-desktop) {
+            margin: 0;
+        }
+
+        @include breakpoint ($desktop) {
+            padding-top: 2rem;
+        }
+    }
+
+    &.height {
+        align-items: center;
+    }
+}
+
+.day__item__img {
+    padding-top: .6rem;
+    margin-right: 1rem;
+
+    display: flex;
+    justify-content: center;
+
+    fill: $wave;
+    
+    @include breakpoint ($big-mobile) {
+        padding-top: .3rem;
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        margin-right: 2rem;
+    }
+
+    &--dinner {
+        padding-top: 0;
+    }
+
+    &.height {
+        padding-top: .3rem;
+    }
+}
+
+.day__item__image {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    @include breakpoint ($sm1-desktop) {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+.day__item__content {
+    display: block;
+
+    &--dinner {
+        @include breakpoint ($big-mobile) {
+            margin-top: .2rem;
+        }
+
+        @include breakpoint ($sm1-desktop) {
+            margin-top: .5rem;
+        }
+    }
+}
+
+.dinner__title {
+    display: inline;
+
+    font-style: oblique;
+    font-weight: 700;
+    font-size: 1.8rem;
+
+    text-shadow: $black .05rem .01rem 0, $black -.01rem -.01rem 0, $black -.01rem .01rem 0, $black .01rem -.01rem 0;
+
+    @include breakpoint ($big-mobile) {
+        font-size: 2.1rem;
+    }
+}
+
+.dinner__text {
+    display: inline;
+
+    margin-left: 1rem;
+
+    font-size: 1.6rem;
+    opacity: .9;
+
+    @include breakpoint ($mobile-iphone) {
+        font-size: 1.7rem;
+    }
+
+    @include breakpoint ($big-mobile) {
+        margin-top: .1rem;
+
+        font-size: 2rem;
+    }
+}
+
+.day__content-description {
+    margin: 1rem 0 0 1rem;
+
+    font-size: 1.8rem;
+    text-align: justify;
+
+    @include breakpoint ($big-mobile) {
+        font-size: 2.1rem;
+    }
+    
+    @include breakpoint ($tablet) {
+        float: left;
+
+        &::before {
+            content: '';
+
+            width: 53%;
+            height: 20rem;
+            float: right;
+
+            @include breakpoint ($sm1-desktop) {
+                display: none;
+
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        margin: 1.5rem 2rem 0 2rem;
+    }
+
+    @include breakpoint ($desktop) {
+        margin: 2rem 4rem 0 3rem;
+    }
+
+    &--long {
+        &::before {
+            height: 16rem;
+
+            @include breakpoint ($b2-tablet) {
+                height: 17rem;
+            }
+
+            @include breakpoint ($sm1-desktop) {
+                display: none;
+                
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+
+    &--short {
+        &::before {
+            height: 21rem;
+
+            @include breakpoint ($sm1-desktop) {
+                display: none;
+                
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+}

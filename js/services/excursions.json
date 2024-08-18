@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "picture": "diva",
+        "title": "Легенды о горе Кошка и скале Дива",
+        "shortTitle": "Симеиз",
+        "price": "от 1500 руб"
+    },
+    {
+        "id": 2,
+        "picture": "sunset_ai_petri",
+        "title": "Закат на \"короне\" Ай-Петри",
+        "shortTitle": "Ай-Петри",
+        "price": "от 1500 руб"
+    },
+    {
+        "id": 3,
+        "picture": "mangup-cale",
+        "title": "Средневековье в Крыму",
+        "shortTitle": "Мангул-Кале",
+        "price": "от 3000 руб"
+    },
+    {
+        "id": 4,
+        "picture": "cheese_mountains",
+        "title": "Сырные скалы",
+        "shortTitle": "Сырные скалы",
+        "price": "от 6000 руб"
+    },
+    {
+        "id": 5,
+        "picture": "cliff",
+        "title": "Утёс \"Санта-Барбара\"",
+        "shortTitle": "Санта-Барбара",
+        "price": "от 1500 руб"
+    },
+    {
+        "id": 6,
+        "picture": "report_alupka",
+        "title": "Алупка, Ласточкино гнездо",
+        "shortTitle": "Алупка",
+        "price": "от 1300 руб"
+    },
+    {
+        "id": 7,
+        "picture": "canyon",
+        "title": "Большой каньон Крым",
+        "shortTitle": "Большой каньон",
+        "price": "от 3300 руб"
+    },
+    {
+        "id": 8,
+        "picture": "switzerland",
+        "title": "Крымская Швейцария",
+        "shortTitle": "Швейцария",
+        "price": "от 4500 руб"
+    }, 
+    {
+        "id": 9,
+        "picture": "bakhchisarai",
+        "title": "К столице Крымского ханства",
+        "shortTitle": "Бахчисарай",
+        "price": "от 4200 руб"
+    },
+    {
+        "id": 10,
+        "picture": "caves",
+        "title": "Мраморные пещеры",
+        "shortTitle": "Пещеры",
+        "price": "от 1800 руб"
+    },
+    {
+        "id": 11,
+        "picture": "shore",
+        "title": "Идиальный берег Крыма",
+        "shortTitle": "Берег Крыма",
+        "price": "от 2000 руб"
+    },
+    {
+        "id": 12,
+        "picture": "eski_kermen",
+        "title": "Эски-Кермен",
+        "shortTitle": "Эски-Кермен",
+        "price": "от 9500 руб"
+    }
+]

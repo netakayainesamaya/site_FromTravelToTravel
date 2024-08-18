@@ -1,0 +1,487 @@
+/* Greeting =================================================
+==========================================================*/
+.tours {
+    max-width: 130rem;
+    margin: 0 2rem;
+
+    @include breakpoint ($big-mobile) {
+        margin: 0 3rem;
+    }
+
+    @include breakpoint ($tablet) {
+        margin: 0 2rem;
+    }
+
+    @include breakpoint ($b1-tablet) {
+        margin: 0 3rem;
+    }
+
+    @include breakpoint ($sm2-desktop) {
+        margin: 0 6rem;
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        margin: 0 auto;
+    }
+}
+
+.tours__begin {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 130rem;
+    margin: 0 auto;
+
+    @include breakpoint ($sm2-tablet) {
+        padding-bottom: 4rem;
+    }
+
+    @include breakpoint ($b1-tablet) {
+        padding-bottom: 6rem;
+    }
+}
+
+.tours__preview {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    @include breakpoint ($sm1-tablet) {
+        margin: 0 1rem;
+    }
+
+    @include breakpoint ($tablet) {
+        margin: 0 3rem;
+    }
+
+    @include breakpoint ($b1-tablet) {
+        margin: 0 4rem;
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        margin: 0 10rem;
+    }
+
+    @include breakpoint ($desktop) {
+        margin: 0 8rem;
+    }
+
+    @include breakpoint ($b1-desktop) {
+        margin: 0 auto;
+    }
+}
+
+.tours__subtitle {
+    width: 100%;
+
+    font-family: "Marck Script", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+
+    @include breakpoint ($big-mobile) {
+        font-size: 6rem;
+    }
+
+    &--long {
+        display: none;
+
+        @include breakpoint ($mobile-iphone) {
+            display: block;
+        }
+
+        @include breakpoint ($big-mobile) {
+            font-size: 5.6rem;
+        }
+
+        @include breakpoint ($sm2-tablet) {
+            font-size: 6rem;
+        }
+    }
+
+    &--short {
+        display: block;
+
+        @include breakpoint ($mobile-iphone) {
+            display: none;
+        }
+    }
+}
+
+.tours__description {
+    display: none;
+
+    margin-top: 1rem;
+
+    width: 100%;
+
+    font-size: 1.8rem;
+    text-align: justify;
+    opacity: .5;
+
+    @include breakpoint ($big-mobile) {
+        display: block;
+
+        margin-top: 2rem;
+
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    &--short {
+        display: block;
+
+        @include breakpoint ($big-mobile) {
+            display: none;
+        }
+    }
+}
+
+.tours__container {
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    width: 28rem;
+
+    display: flex;
+
+    @include breakpoint ($mobile-iphone) {
+        width: 37rem;
+    }
+
+    @include breakpoint ($mobile) {
+        width: 44rem;
+    }
+
+    @include breakpoint ($big-mobile) {
+        margin-top: 3rem;
+
+        width: 48rem;
+    }
+
+    @include breakpoint ($sm2-tablet) {
+        width: 61rem;
+    }
+
+    @include breakpoint ($sm1-tablet) {
+        width: 64rem;
+    }
+
+    @include breakpoint ($b1-tablet) {
+        width: 79rem;
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        width: 110rem;
+    }
+
+    @include breakpoint ($desktop) {
+        width: 115rem;
+    }
+}
+
+.items__container-map {
+    padding: 2rem 1.5rem 1.5rem;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    border: $wave .1rem solid;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1.5rem rgba($wave, .2);
+
+    &:hover {
+        box-shadow: 1rem 1rem 1rem rgba($green-wave, 1);
+    }
+
+    &.height {
+        @include breakpoint ($b1-tablet) {
+            height: 49rem;
+
+            animation: heightContainerMapDesktop .5s ease-in-out forwards;
+        }
+    }
+
+    @include breakpoint ($mobile-iphone) {
+        padding: 2rem 2rem 1.5rem;
+    }
+
+    @include breakpoint ($mobile) {
+        padding: 1rem 2rem;
+    }
+
+    @include breakpoint ($sm2-tablet) {
+        padding: 2rem;
+    }
+
+    @include breakpoint ($b1-tablet) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+        height: 44.5rem;
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        width: 70%;
+    }
+}
+
+.items__form {
+    display: none;
+
+    width: 30%;
+
+    &--footer {
+        margin: 0 auto;
+
+        display: flex;
+
+        max-width: 28rem;
+        width: 100%;
+        height: 41rem;
+
+        @include breakpoint ($mobile) {
+            height: 45rem;
+        }
+
+        @include breakpoint ($sm1-tablet) {
+            margin: 0;
+
+            width: 48.5%;
+        }
+
+        @include breakpoint ($sm1-desktop) {
+            max-width: 32.5rem;
+
+            width: 40%;
+        }
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        padding: 0 0 0 2.5rem;
+
+        display: block;
+    }
+
+    &.show {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        
+        width: 100%;
+        height: 44rem;
+    }
+
+    &--question {
+        padding: 0;
+
+        width: 100%;
+        height: 46.4rem;
+
+        display: flex;
+
+        @include breakpoint($mobile-iphone) {
+            height: 48rem;
+        }
+
+        @include breakpoint($sm2-tablet) {
+            height: 48.3rem;
+        }
+
+        @include breakpoint($b2-tablet) {
+            height: 48.7rem;
+        }
+
+        @include breakpoint($sm2-desktop) {
+            height: 49.4rem;
+        }
+    }
+
+    &--obility {
+        padding: 0;
+
+        width: 31rem;
+        height: 43rem;
+
+        display: flex;
+
+        @include breakpoint($b2-tablet) {
+            height: 44rem;
+        }
+    }
+
+    &--call {
+        height: 42.5rem;
+
+        @include breakpoint($b2-tablet) {
+            height: 43rem;
+        }
+
+        @include breakpoint($sm2-desktop) {
+            height: 44rem;
+        }
+    }
+
+    &--send {
+        @include breakpoint($mobile-iphone) {
+            height: 48.7rem;
+        }
+
+        @include breakpoint($b2-tablet) {
+            height: 49.2rem;
+        }
+
+        @include breakpoint($sm2-desktop) {
+            height: 49.7rem;
+        }
+    }
+}
+
+
+/* Main ===================================================
+==========================================================*/
+.tours__main {
+    max-width: 130rem;
+    margin: 0 auto;
+
+    position: relative;
+
+    &::after {
+        padding: 0;
+        margin: 0;
+    
+        content: "";
+        position: absolute;
+        width: 51%;
+        height: 5rem;
+        bottom: -5rem;
+        border-right: .5rem solid $wave;
+        border-top: .5rem solid $wave;
+        z-index: 3;
+
+        @include breakpoint ($sm1-tablet) {
+            width: 78.5%;
+        }
+
+        @include breakpoint ($tablet) {
+            width: 62%;
+            height: 6rem;
+            bottom: -6rem;
+        }
+
+        @include breakpoint ($b1-tablet) {
+            width: 65.2%;
+        }
+
+        @include breakpoint ($sm1-desktop) {
+            width: 69.6%;
+        }
+
+        @include breakpoint ($desktop) {
+            width: 70.5%;
+            height: 9rem;
+            bottom: -9rem;
+            border-right: .8rem solid $wave;
+            border-top: .8rem solid $wave;
+        }
+    }
+
+    @include breakpoint ($big-mobile) {
+        max-width: 53rem;
+    }
+
+    @include breakpoint ($tablet) {
+        max-width: 77rem;
+    }
+
+    @include breakpoint ($b1-tablet) {
+        max-width: 79rem;
+    }
+
+    @include breakpoint ($b2-tablet) {
+        max-width: 87rem;
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        max-width: 110rem;
+    }
+
+    @include breakpoint ($desktop) {
+        max-width: 130rem;
+    }
+}
+
+.tours__main-title {
+    padding-bottom: 2rem;
+
+    font-family: 'Pattaya', sans-serif;
+    font-size: 3.2rem;
+    text-align: center;
+    letter-spacing: .1rem;
+
+    @include breakpoint ($big-mobile) {
+        font-size: 5rem;
+    }
+
+    @include breakpoint ($tablet) {
+        padding-bottom: 3rem;
+    }
+
+    @include breakpoint ($b1-tablet) {
+        padding-bottom: 5rem;
+
+        font-size: 6rem;
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        font-size: 8rem;
+    }
+}
+
+.tours__main-container {
+    padding-bottom: 1rem;
+
+    width: 100%;
+    height: auto;
+
+    border-left: .5rem solid $wave;
+
+    @include breakpoint ($desktop) {
+        padding: 1rem 1rem 4rem .5rem;
+
+        max-width: none;
+
+        border-left: .8rem solid $wave;
+    }
+}
+
+.day__container {
+    position: relative;
+
+    margin-bottom: 2.5rem;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    @include breakpoint ($tablet) {
+        margin-bottom: 3.5rem;
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        margin-bottom: 4.5rem;
+    }
+}
+
+
+
+

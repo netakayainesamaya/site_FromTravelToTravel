@@ -1,0 +1,179 @@
+.post__content {
+    padding: 2rem 1.5rem 3.5rem 1.5rem;
+
+    width: 100%;
+    height: 24.3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    border-right: none;
+    border-image: linear-gradient($white 20%, $wave 50%, $white 80%);
+    border-image-slice: 1;
+
+    position: relative;
+
+    @include breakpoint($big-mobile) {
+        padding-top: 3rem;
+
+        width: 63%;
+        height: 27.5rem;
+    }
+
+    @include breakpoint($sm2-tablet) {
+        padding: 2.5rem 2.5rem 3.5rem 2rem;
+
+        height: 30rem;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        padding-bottom: 4.5rem;
+        height: 30.5rem;
+    }
+
+    @include breakpoint($tablet) {
+        padding: 3rem 3rem 4.5rem 2.5rem;
+
+        height: 35rem;
+    }
+
+    @include breakpoint($b1-tablet) {
+        padding: 3.5rem 2.5rem 1.5rem 2rem;
+
+        width: 48%;
+        height: 34rem;
+
+        border-right: .1rem solid $black;
+    }
+
+    @include breakpoint($b2-tablet) {
+        padding-bottom: 2rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        width: 43%;
+        height: 37rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        width: 45%;
+    }
+}
+
+.post__title {
+    margin-bottom: 1rem;
+
+    font-family: 'Pattaya', sans-serif;
+    font-size: 2.15rem;
+    color: $black;
+
+    @include breakpoint($sm2-tablet) {
+        margin-bottom: 1.5rem;
+
+        font-size: 2.5rem;
+        // text-align: center;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        margin-bottom: 1rem;
+
+        font-size: 2.8rem;
+        text-align: start;
+    }
+
+    @include breakpoint($tablet) {
+        font-size: 3rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+    }
+}
+
+.post__subtitle {
+    margin-bottom: .8rem;
+
+    font-family: 'Cormorant Infant', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.6rem;
+    color: $black;
+
+    opacity: .5;
+
+    @include breakpoint($sm2-tablet) {
+        font-size: 1.8rem;
+
+        display: none;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        font-size: 2.2rem;
+        
+        display: block;
+
+    }
+
+    @include breakpoint($tablet) {
+        font-size: 2.3rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        margin-bottom: 1rem;
+
+        font-size: 2.5rem;
+    }
+
+    @include breakpoint($desktop) {
+        margin-bottom: 2.5rem;
+
+        font-size: 2.5rem;
+    }
+}
+
+.post__text {
+    margin-top: .5rem;
+
+    font-size: 1.4rem;
+    text-align: justify;
+    // overflow: hidden;
+
+
+    @include breakpoint($sm2-tablet) {
+        // margin-top: 0;
+
+        font-size: 1.6rem;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        // margin-top: 0;
+
+        font-size: 1.8rem;
+        line-height: 1.1;
+    }
+
+    @include breakpoint($tablet) {
+        // margin-top: 0;
+
+        // font-size: 1.8rem;
+        line-height: 1.2;
+    }
+}
+
+
+/* Content-block ==========================================
+==========================================================*/
+.post__date-hidden {
+    margin-bottom: .5rem;
+
+    display: flex;
+
+    @include breakpoint($big-mobile) {
+        margin-top: .5rem;
+    }
+
+    @include breakpoint($b1-tablet) {
+        display: none;
+    }
+}

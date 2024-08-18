@@ -1,0 +1,211 @@
+.excursion-bg {
+    background: url('./../../img/post/excursion-bg.jpg');
+}
+
+.excursions__main {
+    margin: 0 auto;
+    padding-bottom: 2.5rem;
+
+    max-width: 115rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint ($sm1-tablet) {
+        margin: 0 1rem;
+    }
+    
+    @include breakpoint ($tablet) {
+        margin: 0 3rem;
+    }
+
+    @include breakpoint ($b1-tablet) {
+        margin: 0 4rem;
+    }
+
+    @include breakpoint ($sm1-desktop) {
+        margin: 0 auto;
+        padding-bottom: 5rem;
+        
+        width: 110rem;
+    }
+
+    @include breakpoint ($desktop) {
+        width: 115rem;
+    }
+
+}
+
+.excursion__items {
+    width: 100%;
+
+    @include breakpoint ($sm1-desktop) {
+        width: 70%;
+    }
+}
+
+.excursion__item-text {
+    text-align: justify;
+
+    @include breakpoint ($sm1-desktop) {
+        text-align: start;
+    }
+
+    &--justify {
+        text-align: start;
+    }
+}
+
+.excursion__right {
+    padding-top: 2.5rem;
+
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint ($sm1-desktop) {
+        padding-top: 0;
+
+        width: 30%;
+
+        align-items: flex-end;
+    }
+}
+
+.excursion__item-title {
+    display: none;
+
+    margin-top: 2rem;
+
+    font-family: 'Marck Script', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+
+    &--expectation {
+        margin-top: 0;
+
+        display: block;
+    }
+
+    &--long {
+        display: block;
+    }
+
+    @include breakpoint ($mobile-iphone) {
+        display: block;
+    }
+
+    &--short {
+        display: block;
+
+        @include breakpoint ($mobile-iphone) {
+            display: none;
+        }
+    }
+}
+
+.item__text-subtitle {
+    margin-top: 1rem;
+
+    text-shadow: $black .05rem .01rem 0, $black -.01rem -.01rem 0, $black -.01rem .01rem 0, $black .01rem -.01rem 0;
+
+    text-align: start;
+}
+
+.item__text-text {
+    margin-top: .5rem;
+
+    opacity: .7;
+
+    &--coffee {
+        position: relative;
+
+        margin-top: 1rem;
+
+        display: flex;
+
+        opacity: 1;
+
+        @include breakpoint ($b2-tablet) {
+            position: static;
+
+            align-items: center;
+        }
+
+        @include breakpoint ($b1-desktop) {
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+.cofee__image {
+    width: 4rem;
+    height: 4rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include breakpoint ($b2-tablet) {
+        margin-bottom: 1rem;
+        width: 6%;
+
+        position: static;
+
+        top: auto;
+        left: auto;
+    }
+}
+
+.coffee__text {
+    opacity: .7;
+
+    &::before {
+        content: "";
+
+        width: 5rem;
+        height: 4rem;
+
+        float: left;
+
+        @include breakpoint ($b2-tablet) {
+            width: 0;
+            height: 0;
+
+            opacity: 0;
+        }
+    }
+
+    @include breakpoint ($b2-tablet) {
+        margin-left: 1rem;
+
+        width: 94%;
+    }
+}
+
+.bold {
+    text-shadow: #000 0.1rem 0.01rem 0, #000 -0.01rem -0.01rem 0, #000 -0.01rem 0.01rem 0, #000 0.01rem -0.01rem 0;
+}
+
+.excursion__item-button {
+    margin-top: 2rem;
+
+    text-align: center;
+
+    @include breakpoint ($sm1-desktop) {
+        text-align: start;
+    }
+}
+
+.excursion__buttons {
+    height: 100%;
+    
+    display: flex;
+    align-items: flex-end;
+}
+

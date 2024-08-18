@@ -1,0 +1,214 @@
+/* Button =================================================
+==========================================================*/
+.btn {
+    display: inline-block;
+    justify-content: center;
+    vertical-align: top;
+    padding: .4em .7em;
+
+    background: $wave;
+    border-color: $white;
+    box-shadow: 0 7px 17px -10px rgba($wave, .3);
+    cursor: pointer;
+    border-radius: .41em;
+    border-style: outset;
+    border-width: .2rem;
+
+    font-family: 'Cormorant Infant', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: $white;
+    text-decoration: none;
+
+    transition: background-color .2s linear;
+
+    &:hover {
+        text-decoration: none;
+        background-color: darken($wave, 10%)
+    }
+
+    @include breakpoint($b2-desktop) {
+        font-size: 2rem;
+    }
+
+    &--greeting {
+        @include breakpoint($b2-tablet) {
+            font-size: 2rem;
+        }
+    }
+
+    &--tour {
+        display: none;
+        
+        font-size: 2rem;
+
+        @include breakpoint($sm1-tablet) {
+            display: inline-block;
+            font-size: 1.8rem;
+        }
+
+        @include breakpoint($b1-tablet) {
+            font-size: 1.7rem;
+        }
+
+        @include breakpoint($desktop) {
+            font-size: 2rem;
+        }
+        
+    }
+
+    &--sm-tour {
+        @include breakpoint($sm1-tablet) {
+            display: none;
+        }
+    }
+
+    &--footer {
+        font-size: 1.1rem;
+
+        @include breakpoint($sm2-tablet) {
+            font-size: 1.5rem;
+        }
+
+        @include breakpoint($sm1-desktop) {
+            font-size: 2rem;
+        }
+    }
+
+    &--general {
+        font-size: 1.8rem;
+    }
+
+    &--more {
+        border-color: $wave;
+        box-shadow: 0 .4rem 4.5rem rgba($wave, .95);
+        font-style: oblique;
+        text-shadow: $wave .01rem .01rem 0, $wave -.01rem -.01rem 0, $wave -.01rem .01rem 0, $wave .01rem -.01rem 0;
+
+        transition: background-color .2s linear;
+
+        &:hover,
+        &:focus {
+            background-color: $white;
+            color: $wave;
+
+        }
+    }
+
+    &--form {
+        @include breakpoint($mobile) {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+/* Search =================================================
+==========================================================*/
+.search__button {
+    display: none;
+
+    width: 7rem;
+
+    position: absolute;
+    top: -.85rem;
+    left: 18rem;
+    z-index: 3;
+
+    transition: transform .2s linear;
+
+    &:hover {
+        cursor: pointer;
+
+        transform: translateY(-.5rem);
+    }
+
+    &.show {
+        display: block;
+
+        @include breakpoint($mobile) {
+            top: 0;
+            left: -30%;
+        }
+    
+        @include breakpoint($big-mobile) {
+            left: 18%;
+            top: -3%;
+        }
+    
+        @include breakpoint($sm2-tablet) {
+            left: -1%;
+        }
+    
+        @include breakpoint($tablet) {
+            top: -2%;
+        }
+    
+        @include breakpoint($desktop) {
+            display: none;
+        }
+    }
+
+    &.active {
+        @include breakpoint($sm2-tablet) {
+            display: none;
+        }
+    }
+}
+
+.search__block {
+    position: relative;
+
+    width: 11rem;
+    height: 10rem;
+
+    background: url("./../../img/post__preview/post_set-top.svg") center no-repeat;
+
+    @include breakpoint($mobile) {
+        background-image: none;
+    }
+
+    @include breakpoint($big-mobile) {
+        background: url("./../../img/post__preview/post_set-top.svg") center no-repeat;
+    }
+}
+
+.search__img {
+    margin-left: .6rem;
+    width: 4rem;
+    height: 4rem;
+
+    position: absolute;
+    top: 10%;
+    left: 28%;
+}
+
+.search__text {
+    margin-top: .5rem;
+
+    font-family: "Pattaya", sans-serif;
+    font-size: 1.8rem;
+
+    color: $white;
+
+    text-shadow: $dark-grey .05rem .05rem 0, $black -.05rem -.05rem 0, $black -.05rem .05rem 0, $black .05rem -.05rem 0;
+
+    position: absolute;
+    top: 46%;
+    left: 25%;
+
+    @include breakpoint($mobile) {
+        color: $black;
+        text-shadow: none;
+    }
+
+    @include breakpoint($big-mobile) {
+        color: $white;
+        text-shadow: $dark-grey .05rem .05rem 0, $black -.05rem -.05rem 0, $black -.05rem .05rem 0, $black .05rem -.05rem 0;
+    }
+
+    @include breakpoint($desktop) {
+        color: $black;
+        text-shadow: none;
+    }
+}

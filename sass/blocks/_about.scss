@@ -1,0 +1,175 @@
+.about {
+    margin: 0 2rem;
+    padding-top: 2rem;
+
+    max-width: 130rem;
+
+
+    @include breakpoint($big-mobile) {
+        margin: 0 3rem;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        margin: 0 4rem 0 2rem;
+    }
+
+    @include breakpoint($tablet) {
+        margin: 0 5rem 0 3rem;
+    }
+
+    @include breakpoint($b1-tablet) {
+        margin: 0 7rem 0 4rem;
+    }
+
+    @include breakpoint($b2-tablet) {
+        margin: 0 12rem;
+        padding-top: 7rem;
+    }
+
+    @include breakpoint($desktop) {
+        margin: 0 18rem;
+    }
+
+    @include breakpoint($b1-desktop) {
+        margin: 0 auto;
+    }
+}
+
+.about__content {
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint($sm1-tablet) {
+        margin-bottom: 0;
+    }
+
+    @include breakpoint($b2-tablet) {
+        margin-bottom: 2rem;
+    }
+
+    &--mg-left {
+        margin-left: 0;
+
+        @include breakpoint($sm1-desktop) {
+            margin-left: 9rem;
+        }
+    }
+}
+
+.about__content-image {
+    width: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint($big-mobile) {
+        height: 6rem;
+
+        width: 12%;
+
+        justify-content: start;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        width: 15%;
+        height: 8rem;
+
+        justify-content: center;
+    }
+
+    @include breakpoint($b2-tablet) {
+        width: 10.3rem;
+    }
+}
+
+.about__img {
+    width: 4rem;
+    height: 4rem;
+
+    @include breakpoint($big-mobile) {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+.about__item {
+    margin-top: 1rem;
+
+    width: 100%;
+
+    @include breakpoint($big-mobile) {
+        padding-left: 1rem;
+
+        width: 88%;
+    }
+
+    @include breakpoint($sm2-tablet) {
+        padding-left: 0;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        padding-left: 1rem;
+
+        width: 85%;
+    }
+
+    @include breakpoint($tablet) {
+        padding-left: 0;
+    }
+}
+
+.about__item-title {
+    display: none;
+
+    font-family: 'Marck Script', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+
+    @include breakpoint($big-mobile) {
+        margin-bottom: 1rem;
+
+        display: block;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        font-size: 4rem;
+    }
+
+    &--hidden {
+        margin-left: 1rem;
+
+        width: 81%;
+
+        display: flex;
+        align-items: flex-end;
+
+        font-size: 2.4rem;
+
+        @include breakpoint($big-mobile) {
+            display: none;
+        }
+    }
+}
+
+.about__item-text {
+    margin-bottom: 0;
+
+    font-size: 1.8rem;
+    text-align: justify;
+    opacity: .8;
+
+    @include breakpoint($sm1-tablet) {
+        margin-bottom: 2rem;
+
+        font-size: 2rem;
+    }
+}

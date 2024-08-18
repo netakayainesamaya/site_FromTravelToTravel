@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "picture": "demerdgi",
+        "title": "Трекинг к вершине Южной Демерджи",
+        "shortTitle": "Демерджи",
+        "price": "от 4000 руб"
+    },
+    {
+        "id": 2,
+        "picture": "turquoise_lake",
+        "title": "Бирюзовое озеро",
+        "shortTitle": "Бирюзовое озеро",
+        "price": "от 1500 руб"
+    },
+    {
+        "id": 3,
+        "picture": "temple_sun",
+        "title": "Храм Солнца",
+        "shortTitle": "Храм Солнца",
+        "price": "от 1300 руб"
+    },
+    {
+        "id": 4,
+        "picture": "botkinskaya",
+        "title": "Легендарная Боткинская тропа",
+        "shortTitle": "Боткинская",
+        "price": "от 2000 руб"
+    },
+    {
+        "id": 5,
+        "picture": "uch_kosh",
+        "title": "Ущелье Уч-Кош",
+        "shortTitle": "Ущелье Уч-Кош",
+        "price": "от 1900 руб"
+    },
+    {
+        "id": 6,
+        "picture": "cape_aiya",
+        "title": "Затерянный мир Айя",
+        "shortTitle": "Мир Айя",
+        "price": "от 3300 руб"
+    }, 
+    {
+        "id": 7,
+        "picture": "chatyr_dag",
+        "title": "К вершинам Чатыр-Дага",
+        "shortTitle": "Чатыр-Даг",
+        "price": "от 3900 руб"
+    }
+]

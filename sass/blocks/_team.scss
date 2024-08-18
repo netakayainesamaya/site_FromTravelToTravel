@@ -1,0 +1,302 @@
+.team-bg {
+    @include breakpoint($b1-tablet) {
+        background: url('./../../img/post/excursion-bg.jpg');
+    }
+
+    &--about {
+        padding-bottom: 3rem;
+
+        @include breakpoint($b1-tablet) {
+            padding-bottom: 6rem;
+        }
+    }
+}
+
+.team {
+    margin: 0 auto;
+    padding-top: 10rem;
+
+    max-width: 130rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    &--about {
+        padding-top: 1rem;
+
+        @include breakpoint($big-mobile) {
+            margin: 0 2rem;
+            padding-top: 2rem;
+        }
+
+        @include breakpoint($sm2-tablet) {
+            margin: 0 3rem;
+        }
+
+        @include breakpoint($sm1-tablet) {
+            margin: 0 6rem;
+            padding-top: 3rem;
+        }
+
+        @include breakpoint($tablet) {
+            margin: 0 3rem;
+        }
+
+        @include breakpoint($b1-tablet) {
+            margin: 0 5rem;
+        }
+
+        @include breakpoint($b2-tablet) {
+            margin: 0 7rem;
+        }
+
+        @include breakpoint($sm2-desktop) {
+            margin: 0 auto;
+            padding-top: 6rem;
+
+            width: 90%;
+        }
+
+        @include breakpoint($sm1-desktop) {
+            width: 80%;
+        }
+
+        @include breakpoint($b1-desktop) {
+            width: 70%;
+        }
+    }
+
+    &--popular {
+        display: none;
+
+        margin-bottom: 2.5rem;
+        padding-top: 1rem;
+
+        @include breakpoint($tablet) {
+            display: flex;
+        }
+
+        @include breakpoint($b1-tablet) {
+            padding-top: 3rem;
+        }
+
+        @include breakpoint($sm2-desktop) {
+            margin-bottom: 3rem;
+            padding-top: 6rem;
+        }
+    }
+}
+
+.team__title {
+    width: 100%;
+
+    font-family: 'Pattaya', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    word-spacing: .4rem;
+    font-size: 2rem;
+
+    @include breakpoint($big-mobile) {
+        font-size: 3.5rem;
+    }
+
+    @include breakpoint($tablet) {
+        font-size: 4rem;
+        word-spacing: 1.5rem;
+    }
+}
+
+.our__team {
+    margin-top: 7rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint($big-mobile) {
+        margin-top: 10rem;
+    }
+
+    @include breakpoint($tablet) {
+        margin-top: 13rem;
+    }
+}
+
+.team__items {
+    width: 33.33333%;
+    height: 11rem;
+
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint($mobile-iphone) {
+        height: 14rem;
+    }
+
+    @include breakpoint($big-mobile) {
+        height: 15rem;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        height: 17rem;
+    }
+
+    @include breakpoint($tablet) {
+        height: 20rem;
+    }
+}
+
+.team__block {
+    width: 95%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    background-color: $light-grey;
+
+    position: relative;
+
+    @include breakpoint($tablet) {
+        width: 93%;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        width: 80%;
+    }
+
+    @include breakpoint($desktop) {
+        width: 70%;
+    }
+}
+
+.team__image {
+    background-color: $white;
+    border: .8rem solid $white;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -47%;
+    left: 50%;
+    z-index: 2;
+
+    transform: translateX(-50%);
+
+    @include breakpoint($tablet) {
+        border: 1.3rem solid $white;
+    }
+}
+
+.team__img {
+    width: 7rem;
+    height: 7rem;
+
+    border-radius: 50%;
+    transition: transform .2s linear;
+
+    &:hover {
+        border: .5rem solid $yellow;
+
+        transform: translateY(-1.5rem);
+    }
+
+    @include breakpoint($mobile-iphone) {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    @include breakpoint($tablet) {
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+.team__text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.team__name, .team__age, .team__position {
+    width: 100%;
+}
+
+.team__name {
+    margin-bottom: .3rem;
+
+    font-family: 'Cormorant Infant', sans-serif;
+    font-style: oblique;
+    font-weight: 700;
+    font-size: 1.3rem;
+
+    @include breakpoint($mobile-iphone) {
+        font-size: 1.6rem;
+    }
+
+    @include breakpoint($big-mobile) {
+        font-size: 2rem;
+    }
+
+    @include breakpoint($tablet) {
+        margin-bottom: 1rem;
+
+        font-size: 2.5rem;
+    }
+}
+
+.team__age {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: .6;
+
+    @include breakpoint($mobile-iphone) {
+        font-size: 1.6rem;
+    }
+
+    @include breakpoint($big-mobile) {
+        font-size: 1.8rem;
+    }
+
+    @include breakpoint($tablet) {
+        font-size: 2rem;
+    }
+}
+
+.team__position {
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+
+    width: 80%;
+
+    font-weight: 400;
+    font-size: 1.1rem;
+
+    @include breakpoint($mobile-iphone) {
+        font-size: 1.5rem;
+    }
+
+    @include breakpoint($big-mobile) {
+        font-size: 1.7rem;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        width: 65%;
+    }
+
+    @include breakpoint($tablet) {
+        margin-bottom: .5rem;
+        
+        width: 100%;
+
+        font-size: 2rem;
+    }
+}

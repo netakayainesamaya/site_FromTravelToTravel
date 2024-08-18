@@ -1,0 +1,391 @@
+/* Pagination =============================================
+==========================================================*/
+.pagination {
+    display: none;
+
+    padding-left: 2rem;
+    padding-right: 0;
+
+    @include breakpoint($mobile) {
+        padding-left: $search-button-width + 2rem;
+    }
+
+    @include breakpoint($big-mobile) {
+        padding-left: 2rem;
+    }
+
+    @include breakpoint($sm2-tablet) {
+        padding-left: 3rem;
+    }
+
+    @include breakpoint($desktop) {
+        padding-left: $sliderbar-width + 3rem;
+    }
+
+    &.right {
+        padding-left: 0;
+        padding-right: 2rem;
+
+        @include breakpoint($mobile) {
+            padding-left: $search-button-width;
+        }
+
+        @include breakpoint($big-mobile) {
+            padding-left: 0;
+        }
+
+        @include breakpoint($sm2-tablet) {
+            padding-right: 3rem;
+        }
+
+        @include breakpoint($desktop) {
+            padding-left: $sliderbar-width;
+        }
+    }
+
+    &.show {
+        display: block;
+    }
+}
+
+.pagination__list {  
+    display: flex;
+    justify-content: center;
+
+    transition: transform .2s linear;
+}
+
+.pagination__item-arrow{
+    width: 2.5rem;
+    height: 2.5rem;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    &.active {
+        display: flex;
+    }
+
+    &:hover {
+        background-color: $wave;
+        border-radius: .3rem;
+        box-shadow: 0 .7rem 1rem rgba($green-wave, 1);
+        text-decoration: none;
+
+        .pagination__item-arrow-left, .pagination__item-arrow-right {
+            fill: $white;
+        }
+
+        .pagination__item-arrow-left {
+            transform: rotate(180deg) translateX(.1rem);
+        }
+
+        .pagination__item-arrow-right {
+            transform: translateX(.1rem);
+        }
+    }
+
+    @include breakpoint($sm2-tablet) {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+.pagination__item-arrow-left, .pagination__item-arrow-right {
+    width: 1.8rem;
+    height: 1.8rem;
+
+    fill: $wave;
+
+    transition: translateX .2s linear;
+
+    @include breakpoint($sm2-tablet) {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+.pagination__item-arrow-left {
+    transform: rotate(180deg);
+
+    &:hover {
+        transform: rotate(180deg) translateX(.1rem);
+    }
+}
+
+.pagination__item {
+    margin: 0 .5rem;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $white;
+    border-radius: .3rem;
+    border: $wave .1rem solid;
+
+    font-size: 2rem;
+    color: $wave;
+
+    transition: background-color .2s linear, transform .2s linear, opacity .2s linear;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $wave;
+        color: $white;
+        box-shadow: 0 .7rem 1rem rgba($green-wave, 1);
+    }
+
+    &.hide {
+        display: none;
+    }
+
+    &.active {
+        background-color: $wave;
+        color: $white;
+    }
+
+    @include breakpoint($sm2-tablet) {
+        width: 3.5rem;
+        height: 3.5rem;
+
+        font-size: 2.2rem;
+    }
+}
+
+/* Button more tours =======================================
+==========================================================*/
+.button__more {
+    display: none;
+    justify-content: center;
+
+    &.show {
+        display: flex;
+    }
+
+    @include breakpoint($mobile) {
+        padding-left: $search-button-width;
+    }
+
+    @include breakpoint($big-mobile) {
+        padding-left: 0;
+    }
+
+    @include breakpoint($desktop) {
+        padding-left: $sliderbar-width;
+    }
+}
+
+.index__button {
+    margin: 0 auto;
+    margin-top: 4rem;
+
+    max-width: 25rem;
+
+    display: none;
+    justify-content: space-between;
+
+    @include breakpoint($mobile) {
+        padding-left: $search-button-width;
+
+        max-width: 33rem;
+    }
+
+    @include breakpoint($big-mobile) {
+        padding-left: 0;
+        padding-right: 1.5rem;
+
+        max-width: 50rem;
+
+        justify-content: end;
+    }
+
+    @include breakpoint($sm2-tablet) {
+        max-width: 63rem;
+    }
+
+    @include breakpoint($sm1-tablet) {
+        max-width: 66rem;
+    }
+
+    @include breakpoint($tablet) {
+        max-width: 75rem;
+    }
+
+    @include breakpoint($b1-tablet) {
+        padding-right: 2rem;
+
+        max-width: 80rem;
+    }
+
+    @include breakpoint($b2-tablet) {
+        max-width: 88rem;
+    }
+
+    @include breakpoint($sm2-desktop) {
+        max-width: 98rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        max-width: 106rem;
+    }
+
+    @include breakpoint($desktop) {
+        padding-left: $sliderbar-width;
+
+        max-width: 130rem;
+    }
+
+    &.show {
+        display: flex;
+    }
+
+    &--padding {
+        padding-left: 0;
+
+        justify-content: center;
+
+        @include breakpoint($big-mobile) {
+            justify-content: end;
+        }
+
+        @include breakpoint($desktop) {
+            max-width: 106rem;
+        }
+    }
+
+    &--obility {
+        margin: 0.5rem 1rem 0 0;
+
+        max-width: none;
+
+        display: flex;
+        justify-content: end;
+
+        @include breakpoint($sm1-tablet) {
+            margin-top: 1.5rem;
+        }
+
+        @include breakpoint($tablet) {
+            margin-right: 2rem;
+        }
+
+        @include breakpoint($b1-tablet) {
+            display: none;
+        }
+    }
+
+    &--obility4 {
+        margin: 0 2rem 2rem 0;
+
+        max-width: 106rem;
+
+        display: flex;
+        justify-content: end;
+
+        @include breakpoint($sm1-tablet) {
+            margin-right: 5rem;
+        }
+
+        @include breakpoint($tablet) {
+            display: none;
+        }
+    }
+}
+
+.index__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint($big-mobile) {
+        justify-content: flex-end;
+    }
+}
+
+.index__block + .index__block {
+    @include breakpoint($big-mobile) {
+        margin-left: 4rem;
+    }
+    margin-left: 4rem;
+}
+
+.index__up-text {
+    font-size: 1.8rem;
+    color: $dark-grey;
+
+    @include breakpoint($b1-tablet) {
+        font-size: 2rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        font-size: 2.2rem;
+    }
+}
+
+.index__up {
+    margin-left: 1rem;
+    width: 4rem;
+    height: 3.5rem;
+    background-color: $grey;
+    border-radius: 50%;
+    box-shadow: 0 .4rem 1.5rem rgba($dark-grey, .95);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: translateY(-1rem);
+    }
+
+    @include breakpoint($b1-tablet) {
+        width: 5rem;
+        height: 4.5rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        width: 6rem;
+        height: 5.4rem;
+    }
+}
+
+.up__button, .up__button-update {
+    width: 2rem;
+    height: 2rem;
+
+    fill: $dark-grey;
+
+    &:hover {
+        fill: $yellow;
+    }
+
+    @include breakpoint($b1-tablet) {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    @include breakpoint($sm1-desktop) {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+.up__button-update {
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: rotate(180deg);
+    }
+}

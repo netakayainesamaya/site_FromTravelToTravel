@@ -1,0 +1,102 @@
+.general__filter {
+    width: 100%;
+    padding-left: 0;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    @include breakpoint($b1-tablet) {
+        padding-left: $sliderbar-width;
+    }
+
+    &--padding {
+        padding-left: 0;
+        
+        max-width: 106rem;
+    }
+}
+
+.filter__item {
+    margin: 0 1rem;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    @include breakpoint($big-mobile) {
+        margin: 1rem 1rem;
+    }
+
+    @include breakpoint($sm2-tablet) {
+        margin: 0rem 1rem;
+    }
+
+    @include breakpoint($b1-tablet) {
+        margin: 0 2rem;
+    }
+}
+
+.filter__text {
+    margin: 0 .5rem;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    text-shadow: .2rem .2rem 0 $grey;
+
+    &--long {
+        display: none;
+
+        @include breakpoint($big-mobile) {
+            display: block;
+        }
+    }
+
+    &--short {
+        display: block;
+
+        @include breakpoint($big-mobile) {
+            display: none;
+        }
+    }
+
+    &:hover {
+        color: $pink;
+    }
+
+    @include breakpoint($big-mobile) {
+        font-size: 2rem;
+    }
+}
+
+.filter__during-arrow_bottom, .filter__during-arrow_top {
+    width: 2rem;
+    height: 2rem;
+
+    cursor: pointer;
+
+    @include breakpoint($big-mobile) {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+.filter__during-arrow_top {
+    transform: rotate(180deg);
+
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: translateY(-.4rem) rotate(180deg);
+    }
+}
+
+.filter__during-arrow_bottom {
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: translateY(.4rem);
+    }
+}
