@@ -37,7 +37,7 @@ async function getMoreTours() {
 function renderTours(toursArray) {
     toursArray.forEach(function (item) {
 
-        let basePath = window.location.pathname.includes('/tours/') ? '../' : './';
+        let basePath = window.location.pathname.includes('/tours/') ? '../' : '';
 
         const toursHTML =  `<a class="slider__item" href="${basePath}tours/post-${item.picture}.html">
                                 <div class="more__tours-item-bg">
