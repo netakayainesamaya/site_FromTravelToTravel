@@ -39,8 +39,8 @@ function renderTours(toursArray) {
                                 <div class="more__tours-item-bg">
                                     <div class="more__tours-mask">
                                         <picture class="more__img">
-                                            <source srcset="../../img/post/post-${item.picture}/${item.picture}-sm@1x.webp 1x, ../../img/post/post-${item.picture}/${item.picture}-sm@2x.webp 2x" type="image/webp">
-                                            <img src="../../img/post/post-${item.picture}/${item.picture}-sm@1x.jpg" srcset="../../img/post/post-${item.picture}/${item.picture}-sm@1x.jpg 1x, ../../img/post/post-${item.picture}/${item.picture}-sm@2x.jpg 2x" alt="">
+                                            <source srcset="../img/post/post-${item.picture}/${item.picture}-sm@1x.webp 1x, ../img/post/post-${item.picture}/${item.picture}-sm@2x.webp 2x" type="image/webp">
+                                            <img src="../img/post/post-${item.picture}/${item.picture}-sm@1x.jpg" srcset="../img/post/post-${item.picture}/${item.picture}-sm@1x.jpg 1x, ../img/post/post-${item.picture}/${item.picture}-sm@2x.jpg 2x" alt="">
                                         </picture>
 
                                         <div class="more__link-text">
