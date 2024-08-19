@@ -8,13 +8,13 @@ async function getMoreTours() {
     let link;
 
     if (document.querySelector('title').innerText == 'Экскурсии с гидом') {
-        link = 'excursions.json';
+        link = 'js/services/excursions.json';
     } else if (document.querySelector('title').innerText == 'Туры по Крыму') {
-        link = 'tours.json';
+        link = 'js/services/tours.json';
     } else if (document.querySelector('title').innerText == 'Активный отдых') {
-        link = 'tracking.json';
+        link = 'js/services/tracking.json';
     } else {
-        link = 'more__tours.json';
+        link = 'js/services/more__tours.json';
     };
 
     // Получаем данные из products.json
