@@ -35,12 +35,14 @@ async function getMoreTours() {
 function renderTours(toursArray) {
     toursArray.forEach(function (item) {
 
-        const toursHTML =  `<a class="slider__item" href="./tours/post-${item.picture}.html">
+        let basePath = window.location.pathname.includes('/tours/') ? '../' : './';
+
+        const toursHTML =  `<a class="slider__item" href="${basePath}tours/post-${item.picture}.html">
                                 <div class="more__tours-item-bg">
                                     <div class="more__tours-mask">
                                         <picture class="more__img">
-                                            <source srcset="./img/post/post-${item.picture}/${item.picture}-sm@1x.webp 1x, ./img/post/post-${item.picture}/${item.picture}-sm@2x.webp 2x" type="image/webp">
-                                            <img src="./img/post/post-${item.picture}/${item.picture}-sm@1x.jpg" srcset="./img/post/post-${item.picture}/${item.picture}-sm@1x.jpg 1x, ./img/post/post-${item.picture}/${item.picture}-sm@2x.jpg 2x" alt="">
+                                            <source srcset="${basePath}img/post/post-${item.picture}/${item.picture}-sm@1x.webp 1x, ${basePath}img/post/post-${item.picture}/${item.picture}-sm@2x.webp 2x" type="image/webp">
+                                            <img src="${basePath}img/post/post-${item.picture}/${item.picture}-sm@1x.jpg" srcset="${basePath}img/post/post-${item.picture}/${item.picture}-sm@1x.jpg 1x, ${basePath}img/post/post-${item.picture}/${item.picture}-sm@2x.jpg 2x" alt="">
                                         </picture>
 
                                         <div class="more__link-text">
