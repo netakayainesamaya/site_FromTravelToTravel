@@ -144,7 +144,7 @@ function renderTours(toursArray) {
                                                 </div>
                                             </div>
                                         </div>
-                                        <a class="post__btn" href="../tours/post-${item.picture}.html">
+                                        <a class="post__btn" href="tours/post-${item.picture}.html">
                                             <button class="btn btn--sm-tour" type="submit">Просмотр тура</button>
                                         </a>
                                     </div>
@@ -196,7 +196,7 @@ function renderTours(toursArray) {
                                             </button>
                                         </div>
                                     </div>
-                                    <a class="post__btn" href="../tours/post-${item.picture}.html">
+                                    <a class="post__btn" href="tours/post-${item.picture}.html">
                                         <button class="btn btn--tour" type="submit">Просмотреть тур</button>
                                     </a>
                                 </div>
