@@ -162,14 +162,14 @@
     width: 11rem;
     height: 10rem;
 
-    background: url("./../../img/post__preview/post_set-top.svg") center no-repeat;
+    background: url("../../img/post__preview/post_set-top.svg") center no-repeat;
 
     @include breakpoint($mobile) {
         background-image: none;
     }
 
     @include breakpoint($big-mobile) {
-        background: url("./../../img/post__preview/post_set-top.svg") center no-repeat;
+        background: url("../../img/post__preview/post_set-top.svg") center no-repeat;
     }
 }
 

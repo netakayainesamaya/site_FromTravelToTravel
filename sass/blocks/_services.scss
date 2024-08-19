@@ -14,7 +14,7 @@
     max-width: 192rem;
     height: 37rem;
 
-    background: url("./../../img/services/mobile/sm-mobile-bg@1x.jpg") center no-repeat;
+    background: url("../../img/services/mobile/sm-mobile-bg@1x.jpg") center no-repeat;
 
     display: flex;
     flex-direction: column;
@@ -23,48 +23,48 @@
     @include breakpoint($big-mobile) {
         height: 40rem;
 
-        background: url('./../../img/services/mobile/mobile-bg@1x.jpg') center no-repeat;
+        background: url('../../img/services/mobile/mobile-bg@1x.jpg') center no-repeat;
     }
 
     @include breakpoint($sm2-tablet) {
-        background: url('./../../img/services/tablet/sm-tablet-bg@1x.jpg') center no-repeat;
+        background: url('../../img/services/tablet/sm-tablet-bg@1x.jpg') center no-repeat;
     }
 
     @include breakpoint($tablet) {
-        background: url('./../../img/services/tablet/tablet-bg@1x.jpg') center no-repeat;
+        background: url('../../img/services/tablet/tablet-bg@1x.jpg') center no-repeat;
     }
 
     @include breakpoint($sm2-desktop) {
-        background: url('./../../img/services/desktop/desktop-bg@1x.jpg') center no-repeat;
+        background: url('../../img/services/desktop/desktop-bg@1x.jpg') center no-repeat;
     }
 
     @include breakpoint($desktop) {
-        background: url('./../../img/services/desktop/background@1x.jpg') center no-repeat;
+        background: url('../../img/services/desktop/background@1x.jpg') center no-repeat;
     }
 
     &--about {
-        background: url('./../../img/about/mobile/sm-mobile-bg@1x.jpg') center no-repeat;
+        background: url('../../img/about/mobile/sm-mobile-bg@1x.jpg') center no-repeat;
 
         @include breakpoint($big-mobile) {
             height: 40rem;
 
-            background: url('./../../img/about/mobile/mobile-bg@1x.jpg') center no-repeat;
+            background: url('../../img/about/mobile/mobile-bg@1x.jpg') center no-repeat;
         }
 
         @include breakpoint($sm2-tablet) {
-            background: url('./../../img/about/tablet/sm-tablet-bg@1x.jpg') center no-repeat;
+            background: url('../../img/about/tablet/sm-tablet-bg@1x.jpg') center no-repeat;
         }
 
         @include breakpoint($tablet) {
-            background: url('./../../img/about/tablet/tablet-bg@1x.jpg') center no-repeat;
+            background: url('../../img/about/tablet/tablet-bg@1x.jpg') center no-repeat;
         }
 
         @include breakpoint($sm2-desktop) {
-            background: url('./../../img/about/desktop/desktop-bg@1x.jpg') center no-repeat;
+            background: url('../../img/about/desktop/desktop-bg@1x.jpg') center no-repeat;
         }
 
         @include breakpoint($desktop) {
-            background: url('./../../img/about/desktop/background@1x.jpg') center no-repeat;
+            background: url('../../img/about/desktop/background@1x.jpg') center no-repeat;
         }
     }
 }
@@ -425,7 +425,7 @@
 
         font-size: 2rem;
 
-        background: url('./../../img/post/post__footer-bg.jpg') center no-repeat;
+        background: url('../../img/post/post__footer-bg.jpg') center no-repeat;
     }
 
     &--sm-mobile {

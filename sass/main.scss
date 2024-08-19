@@ -84,50 +84,50 @@
 
 
 // Base
-@import "./base/reset";
-@import "./base/vars";
-@import "./base/mixin";
-@import "./base/base";
+@import "base/reset";
+@import "base/vars";
+@import "base/mixin";
+@import "base/base";
 
 // Libs
-@import "./libs/opacitySlider";
+@import "libs/opacitySlider";
 
 // Blocks
-@import "./blocks/header";
-@import "./blocks/footer";
-@import "./blocks/btn";
-@import "./blocks/nav";
-@import "./blocks/greeting";
-@import "./blocks/greeting-dropdown";
-@import "./blocks/general-filter";
-@import "./blocks/sitebar-filter";
-@import "./blocks/input";
-@import "./blocks/checkbox";
-@import "./blocks/post__preview";
-@import "./blocks/social-icons";
-@import "./blocks/post-image";
-@import "./blocks/modal";
-@import "./blocks/post-content";
-@import "./blocks/post-footer";
-@import "./blocks/pagination";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/btn";
+@import "blocks/nav";
+@import "blocks/greeting";
+@import "blocks/greeting-dropdown";
+@import "blocks/general-filter";
+@import "blocks/sitebar-filter";
+@import "blocks/input";
+@import "blocks/checkbox";
+@import "blocks/post__preview";
+@import "blocks/social-icons";
+@import "blocks/post-image";
+@import "blocks/modal";
+@import "blocks/post-content";
+@import "blocks/post-footer";
+@import "blocks/pagination";
 
 // About
-@import "./blocks/about";
-@import "./blocks/transition";
-@import "./blocks/services";
-@import "./blocks/team";
+@import "blocks/about";
+@import "blocks/transition";
+@import "blocks/services";
+@import "blocks/team";
 
 // Tours
-@import "./blocks/tours";
-@import "./blocks/tours-map";
-@import "./blocks/tours__form";
-@import "./blocks/tours-day__container";
-@import "./blocks/tours-footer";
-@import "./blocks/more-tours";
+@import "blocks/tours";
+@import "blocks/tours-map";
+@import "blocks/tours__form";
+@import "blocks/tours-day__container";
+@import "blocks/tours-footer";
+@import "blocks/more-tours";
 
 // Excursions
-@import "./blocks/excursion";
-@import "./blocks/question";
+@import "blocks/excursion";
+@import "blocks/question";
 
 // Obility
-@import "./blocks/obility";
+@import "blocks/obility";

@@ -3,7 +3,7 @@ getTours();
 // Ассинхронная функция получения данных из файла products.json
 async function getTours() {
     // Получаем данные из products.json
-    const responce = await fetch('./js/index/tours.json');
+    const responce = await fetch('js/index/tours.json');
 
     // Парсим данные из JSON формата в JS
     const toursArray = await responce.json();
@@ -71,11 +71,11 @@ function renderTours(toursArray) {
                                     <div class="post__image">
                                         <div class="post__mask">
                                             <picture>
-                                                <source class="post__img" srcset="./img/post/post-${item.picture}/${item.picture}-bg@1x.webp 1x, ./img/post/post-${item.picture}/${item.picture}-bg@2x.webp 2x" type="image/webp">
-                                                <img class="post__img" src="./img/post/post-${item.picture}/${item.picture}-bg@1x.jpg" srcset="./img/post/post-${item.picture}/${item.picture}-bg@1x.jpg 1x, ./img/post/post-${item.picture}/${item.picture}-bg@2x.jpg 2x" alt="">
+                                                <source class="post__img" srcset="img/post/post-${item.picture}/${item.picture}-bg@1x.webp 1x, img/post/post-${item.picture}/${item.picture}-bg@2x.webp 2x" type="image/webp">
+                                                <img class="post__img" src="img/post/post-${item.picture}/${item.picture}-bg@1x.jpg" srcset="img/post/post-${item.picture}/${item.picture}-bg@1x.jpg 1x, img/post/post-${item.picture}/${item.picture}-bg@2x.jpg 2x" alt="">
                                             </picture>
                                             <div class="post__set">
-                                                <img class="set__img" src="./img/post__preview/post_set.svg" alt="">
+                                                <img class="set__img" src="img/post__preview/post_set.svg" alt="">
                                                 <svg class="set__arrows">
                                                     <use xlink:href="#set__arrows"></use>
                                                 </svg>
@@ -85,13 +85,13 @@ function renderTours(toursArray) {
                                                 </div>
                                             </div>
                                             <div class="post__type">
-                                                <img class="type__img" src="./img/post__preview/post_type.svg" alt="">
+                                                <img class="type__img" src="img/post__preview/post_type.svg" alt="">
                                                 <div class="type__text">${item.format}</div>
                                             </div>
                                             <div class="post__social">
                                                 <div class="social__gallery">
                                                     <a class="gallery" href="#" target="_blank" data-modal="#modal-gallery_${item.id}">
-                                                        <img class="gallery__icon" src="./img/social_icons/social-gallery.svg" alt="">
+                                                        <img class="gallery__icon" src="img/social_icons/social-gallery.svg" alt="">
                                                         <div class="gallery__text">Ещё фото...</div>
                                                     </a>
                                                 </div>
@@ -144,7 +144,7 @@ function renderTours(toursArray) {
                                                 </div>
                                             </div>
                                         </div>
-                                        <a class="post__btn" href="./../tours/post-${item.picture}.html">
+                                        <a class="post__btn" href="../tours/post-${item.picture}.html">
                                             <button class="btn btn--sm-tour" type="submit">Просмотр тура</button>
                                         </a>
                                     </div>
@@ -196,7 +196,7 @@ function renderTours(toursArray) {
                                             </button>
                                         </div>
                                     </div>
-                                    <a class="post__btn" href="./../tours/post-${item.picture}.html">
+                                    <a class="post__btn" href="../tours/post-${item.picture}.html">
                                         <button class="btn btn--tour" type="submit">Просмотреть тур</button>
                                     </a>
                                 </div>
@@ -215,37 +215,37 @@ function renderTours(toursArray) {
                                         
                                             <li class="modal__slider-element">
                                                 <picture class="modal__img">
-                                                    <source  media="(max-width: 540px)" class="modal__photo" srcset="./img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-1.webp, ./img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-1.img">
-                                                    <source  media="(min-width: 541px)" class="modal__photo" srcset="./img/post/post-${item.picture}/gallery/${item.picture}-1.webp, ./img/post/post-${item.picture}/gallery/${item.picture}-1.img">
-                                                    <img class="modal__photo" src="./img/post/post-${item.picture}/gallery/${item.picture}-1.jpg" alt="">
+                                                    <source  media="(max-width: 540px)" class="modal__photo" srcset="img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-1.webp, img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-1.img">
+                                                    <source  media="(min-width: 541px)" class="modal__photo" srcset="img/post/post-${item.picture}/gallery/${item.picture}-1.webp, img/post/post-${item.picture}/gallery/${item.picture}-1.img">
+                                                    <img class="modal__photo" src="img/post/post-${item.picture}/gallery/${item.picture}-1.jpg" alt="">
                                                 </picture>
                                             </li>
                                             <li class="modal__slider-element">
                                                 <picture class="modal__img">
-                                                    <source  media="(max-width: 540px)" class="modal__photo" srcset="./img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-2.webp, ./img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-2.img">
-                                                    <source  media="(min-width: 541px)" class="modal__photo" srcset="./img/post/post-${item.picture}/gallery/${item.picture}-2.webp, ./img/post/post-${item.picture}/gallery/${item.picture}-2.img">
-                                                    <img class="modal__photo" src="./img/post/post-${item.picture}/gallery/${item.picture}-2.jpg" alt="">
+                                                    <source  media="(max-width: 540px)" class="modal__photo" srcset="img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-2.webp, img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-2.img">
+                                                    <source  media="(min-width: 541px)" class="modal__photo" srcset="img/post/post-${item.picture}/gallery/${item.picture}-2.webp, img/post/post-${item.picture}/gallery/${item.picture}-2.img">
+                                                    <img class="modal__photo" src="img/post/post-${item.picture}/gallery/${item.picture}-2.jpg" alt="">
                                                 </picture>
                                             </li>
                                             <li class="modal__slider-element">
                                                 <picture class="modal__img">
-                                                    <source  media="(max-width: 540px)" class="modal__photo" srcset="./img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-3.webp, ./img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-3.img">
-                                                    <source  media="(min-width: 541px)" class="modal__photo" srcset="./img/post/post-${item.picture}/gallery/${item.picture}-3.webp, ./img/post/post-${item.picture}/gallery/${item.picture}-3.img">
-                                                    <img class="modal__photo" src="./img/post/post-${item.picture}/gallery/${item.picture}-3.jpg" alt="">
+                                                    <source  media="(max-width: 540px)" class="modal__photo" srcset="img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-3.webp, img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-3.img">
+                                                    <source  media="(min-width: 541px)" class="modal__photo" srcset="img/post/post-${item.picture}/gallery/${item.picture}-3.webp, img/post/post-${item.picture}/gallery/${item.picture}-3.img">
+                                                    <img class="modal__photo" src="img/post/post-${item.picture}/gallery/${item.picture}-3.jpg" alt="">
                                                 </picture>
                                             </li>
                                             <li class="modal__slider-element">
                                                 <picture class="modal__img">
-                                                    <source  media="(max-width: 540px)" class="modal__photo" srcset="./img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-4.webp, ./img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-4.img">
-                                                    <source  media="(min-width: 541px)" class="modal__photo" srcset="./img/post/post-${item.picture}/gallery/${item.picture}-4.webp, ./img/post/post-${item.picture}/gallery/${item.picture}-4.img">
-                                                    <img class="modal__photo" src="./img/post/post-${item.picture}/gallery/${item.picture}-4.jpg" alt="">
+                                                    <source  media="(max-width: 540px)" class="modal__photo" srcset="img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-4.webp, img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-4.img">
+                                                    <source  media="(min-width: 541px)" class="modal__photo" srcset="img/post/post-${item.picture}/gallery/${item.picture}-4.webp, img/post/post-${item.picture}/gallery/${item.picture}-4.img">
+                                                    <img class="modal__photo" src="img/post/post-${item.picture}/gallery/${item.picture}-4.jpg" alt="">
                                                 </picture>
                                             </li>
                                             <li class="modal__slider-element">
                                                 <picture class="modal__img">
-                                                    <source  media="(max-width: 540px)" class="modal__photo" srcset="./img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-5.webp, ./img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-5.img">
-                                                    <source  media="(min-width: 541px)" class="modal__photo" srcset="./img/post/post-${item.picture}/gallery/${item.picture}-5.webp, ./img/post/post-${item.picture}/gallery/${item.picture}-5.img">
-                                                    <img class="modal__photo" src="./img/post/post-${item.picture}/gallery/${item.picture}-5.jpg" alt="">
+                                                    <source  media="(max-width: 540px)" class="modal__photo" srcset="img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-5.webp, img/post/post-${item.picture}/gallery/mobile/mobile-${item.picture}-5.img">
+                                                    <source  media="(min-width: 541px)" class="modal__photo" srcset="img/post/post-${item.picture}/gallery/${item.picture}-5.webp, img/post/post-${item.picture}/gallery/${item.picture}-5.img">
+                                                    <img class="modal__photo" src="img/post/post-${item.picture}/gallery/${item.picture}-5.jpg" alt="">
                                                 </picture>
                                             </li>
                                         </ul>

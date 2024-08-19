@@ -1,6 +1,6 @@
 .team-bg {
     @include breakpoint($b1-tablet) {
-        background: url('./../../img/post/excursion-bg.jpg');
+        background: url('../../img/post/excursion-bg.jpg');
     }
 
     &--about {

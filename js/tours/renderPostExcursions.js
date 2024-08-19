@@ -1,7 +1,7 @@
 // Ассинхронная функция получения данных из файла post-tours.json
 async function getTours(id) {
     // Получаем данные из products.json
-    const responce = await fetch('./../../js/tours/post-excursions.json');
+    const responce = await fetch('../../js/tours/post-excursions.json');
 
     // Парсим данные из JSON формата в JS
     const toursArray = await responce.json();
@@ -173,72 +173,72 @@ function addModal (toursArrayId) {
                     
                         <li class="modal__slider-element">
                             <picture class="modal__img">
-                                <source  media="(max-width: 540px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-1.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-1.img">
-                                <source  media="(min-width: 541px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-1.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-1.img">
-                                <img class="modal__photo" src="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-1.jpg" alt="">
+                                <source  media="(max-width: 540px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-1.webp, ../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-1.img">
+                                <source  media="(min-width: 541px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-1.webp, ../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-1.img">
+                                <img class="modal__photo" src="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-1.jpg" alt="">
                             </picture>
                         </li>
                         <li class="modal__slider-element">
                             <picture class="modal__img">
-                                <source  media="(max-width: 540px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-2.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-2.img">
-                                <source  media="(min-width: 541px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-2.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-2.img">
-                                <img class="modal__photo" src="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-2.jpg" alt="">
+                                <source  media="(max-width: 540px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-2.webp, ../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-2.img">
+                                <source  media="(min-width: 541px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-2.webp, ../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-2.img">
+                                <img class="modal__photo" src="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-2.jpg" alt="">
                             </picture>
                         </li>
                         <li class="modal__slider-element">
                             <picture class="modal__img">
-                                <source  media="(max-width: 540px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-3.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-3.img">
-                                <source  media="(min-width: 541px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-3.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-3.img">
-                                <img class="modal__photo" src="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-3.jpg" alt="">
+                                <source  media="(max-width: 540px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-3.webp, ../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-3.img">
+                                <source  media="(min-width: 541px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-3.webp, ../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-3.img">
+                                <img class="modal__photo" src="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-3.jpg" alt="">
                             </picture>
                         </li>
                         <li class="modal__slider-element">
                             <picture class="modal__img">
-                                <source  media="(max-width: 540px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-4.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-4.img">
-                                <source  media="(min-width: 541px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-4.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-4.img">
-                                <img class="modal__photo" src="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-4.jpg" alt="">
+                                <source  media="(max-width: 540px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-4.webp, ../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-4.img">
+                                <source  media="(min-width: 541px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-4.webp, ../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-4.img">
+                                <img class="modal__photo" src="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-4.jpg" alt="">
                             </picture>
                         </li>
                         <li class="modal__slider-element">
                             <picture class="modal__img">
-                                <source  media="(max-width: 540px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-5.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-5.img">
-                                <source  media="(min-width: 541px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-5.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-5.img">
-                                <img class="modal__photo" src="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-5.jpg" alt="">
+                                <source  media="(max-width: 540px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-5.webp, ../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-5.img">
+                                <source  media="(min-width: 541px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-5.webp, ../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-5.img">
+                                <img class="modal__photo" src="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-5.jpg" alt="">
                             </picture>
                         </li>
                         <li class="modal__slider-element">
                             <picture class="modal__img">
-                                <source  media="(max-width: 540px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-6.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-6.img">
-                                <source  media="(min-width: 541px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-6.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-6.img">
-                                <img class="modal__photo" src="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-6.jpg" alt="">
+                                <source  media="(max-width: 540px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-6.webp, ../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-6.img">
+                                <source  media="(min-width: 541px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-6.webp, ../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-6.img">
+                                <img class="modal__photo" src="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-6.jpg" alt="">
                             </picture>
                         </li>
                         <li class="modal__slider-element">
                             <picture class="modal__img">
-                                <source  media="(max-width: 540px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-7.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-7.img">
-                                <source  media="(min-width: 541px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-7.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-7.img">
-                                <img class="modal__photo" src="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-7.jpg" alt="">
+                                <source  media="(max-width: 540px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-7.webp, ../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-7.img">
+                                <source  media="(min-width: 541px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-7.webp, ../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-7.img">
+                                <img class="modal__photo" src="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-7.jpg" alt="">
                             </picture>
                         </li>
                         <li class="modal__slider-element">
                             <picture class="modal__img">
-                                <source  media="(max-width: 540px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-8.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-8.img">
-                                <source  media="(min-width: 541px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-8.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-8.img">
-                                <img class="modal__photo" src="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-8.jpg" alt="">
+                                <source  media="(max-width: 540px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-8.webp, ../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-8.img">
+                                <source  media="(min-width: 541px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-8.webp, ../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-8.img">
+                                <img class="modal__photo" src="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-8.jpg" alt="">
                             </picture>
                         </li>
                         <li class="modal__slider-element">
                             <picture class="modal__img">
-                                <source  media="(max-width: 540px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-9.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-9.img">
-                                <source  media="(min-width: 541px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-9.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-9.img">
-                                <img class="modal__photo" src="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-9.jpg" alt="">
+                                <source  media="(max-width: 540px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-9.webp, ../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-9.img">
+                                <source  media="(min-width: 541px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-9.webp, ../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-9.img">
+                                <img class="modal__photo" src="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-9.jpg" alt="">
                             </picture>
                         </li>
                         <li class="modal__slider-element">
                             <picture class="modal__img">
-                                <source  media="(max-width: 540px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-10.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-10.img">
-                                <source  media="(min-width: 541px)" class="modal__photo" srcset="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-10.webp, ./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-10.img">
-                                <img class="modal__photo" src="./../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-10.jpg" alt="">
+                                <source  media="(max-width: 540px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-10.webp, ../../img/post/post-${toursArrayId.picture}/gallery/mobile/mobile-${toursArrayId.picture}-10.img">
+                                <source  media="(min-width: 541px)" class="modal__photo" srcset="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-10.webp, ../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-10.img">
+                                <img class="modal__photo" src="../../img/post/post-${toursArrayId.picture}/gallery/${toursArrayId.picture}-10.jpg" alt="">
                             </picture>
                         </li>
 

@@ -6,7 +6,7 @@
     height: 13rem;
 
     background-color: $light-wave;
-    background-image: url("./../../img/footer/footer-bg.png");
+    background-image: url("../../img/footer/footer-bg.png");
     box-shadow: 0 .5rem 7.5rem rgba($wave, .95);
 
     @include breakpoint($sm1-tablet) {

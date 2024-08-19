@@ -1,7 +1,7 @@
 // Ассинхронная функция получения данных из файла post-tours.json
 async function getTours(id, link) {
     // Получаем данные из products.json
-    const responce = await fetch('./../../js/tours/post-tours.json');
+    const responce = await fetch('../../js/tours/post-tours.json');
     const responceDays = await fetch(link);
 
     // Парсим данные из JSON формата в JS
@@ -101,29 +101,29 @@ function addContainerDays (daysArray) {
 
                             <div class="tours__images-items">
                                 <picture class="day__images">
-                                    <source class="day_img" media="(max-width: 699px)" srcset="./../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-1.webp, ./../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-1.jpg">
-                                    <source class="day_img" media="(min-width: 700px)" srcset="./../img/post/post-${item.picture}/day${item.id}/${item.picture}-1.webp, ./../img/post/post-${item.picture}/day${item.id}/${item.picture}-1.jpg">
-                                    <img class="day_img" src="./../img/post/post-${item.picture}/day${item.id}/${item.picture}-1.jpg" alt="">
+                                    <source class="day_img" media="(max-width: 699px)" srcset="../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-1.webp, ../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-1.jpg">
+                                    <source class="day_img" media="(min-width: 700px)" srcset="../img/post/post-${item.picture}/day${item.id}/${item.picture}-1.webp, ../img/post/post-${item.picture}/day${item.id}/${item.picture}-1.jpg">
+                                    <img class="day_img" src="../img/post/post-${item.picture}/day${item.id}/${item.picture}-1.jpg" alt="">
                                 </picture>
                                 <picture class="day__images">
-                                    <source class="day_img" media="(max-width: 699px)" srcset="./../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-2.webp, ./../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-2.jpg">
-                                    <source class="day_img" media="(min-width: 700px)" srcset="./../img/post/post-${item.picture}/day${item.id}/${item.picture}-2.webp, ./../img/post/post-${item.picture}/day${item.id}/${item.picture}-2.jpg">
-                                    <img class="day_img" src="./../img/post/post-${item.picture}/day${item.id}/${item.picture}-2.jpg" alt="">
+                                    <source class="day_img" media="(max-width: 699px)" srcset="../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-2.webp, ../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-2.jpg">
+                                    <source class="day_img" media="(min-width: 700px)" srcset="../img/post/post-${item.picture}/day${item.id}/${item.picture}-2.webp, ../img/post/post-${item.picture}/day${item.id}/${item.picture}-2.jpg">
+                                    <img class="day_img" src="../img/post/post-${item.picture}/day${item.id}/${item.picture}-2.jpg" alt="">
                                 </picture>
                                 <picture class="day__images">
-                                    <source class="day_img" media="(max-width: 699px)" srcset="./../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-3.webp, ./../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-3.jpg">
-                                    <source class="day_img" media="(min-width: 700px)" srcset="./../img/post/post-${item.picture}/day${item.id}/${item.picture}-3.webp, ./../img/post/post-${item.picture}/day${item.id}/${item.picture}-3.jpg">
-                                    <img class="day_img" src="./../img/post/post-${item.picture}/day${item.id}/${item.picture}-3.jpg" alt="">
+                                    <source class="day_img" media="(max-width: 699px)" srcset="../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-3.webp, ../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-3.jpg">
+                                    <source class="day_img" media="(min-width: 700px)" srcset="../img/post/post-${item.picture}/day${item.id}/${item.picture}-3.webp, ../img/post/post-${item.picture}/day${item.id}/${item.picture}-3.jpg">
+                                    <img class="day_img" src="../img/post/post-${item.picture}/day${item.id}/${item.picture}-3.jpg" alt="">
                                 </picture>
                                 <picture class="day__images">
-                                    <source class="day_img" media="(max-width: 699px)" srcset="./../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-4.webp, ./../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-4.jpg">
-                                    <source class="day_img" media="(min-width: 700px)" srcset="./../img/post/post-${item.picture}/day${item.id}/${item.picture}-4.webp, ./../img/post/post-${item.picture}/day${item.id}/${item.picture}-4.jpg">
-                                    <img class="day_img" src="./../img/post/post-${item.picture}/day${item.id}/${item.picture}-4.jpg" alt="">
+                                    <source class="day_img" media="(max-width: 699px)" srcset="../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-4.webp, ../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-4.jpg">
+                                    <source class="day_img" media="(min-width: 700px)" srcset="../img/post/post-${item.picture}/day${item.id}/${item.picture}-4.webp, ../img/post/post-${item.picture}/day${item.id}/${item.picture}-4.jpg">
+                                    <img class="day_img" src="../img/post/post-${item.picture}/day${item.id}/${item.picture}-4.jpg" alt="">
                                 </picture>
                                 <picture class="day__images">
-                                    <source class="day_img" media="(max-width: 699px)" srcset="./../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-5.webp, ./../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-5.jpg">
-                                    <source class="day_img" media="(min-width: 700px)" srcset="./../img/post/post-${item.picture}/day${item.id}/${item.picture}-5.webp, ./../img/post/post-${item.picture}/day${item.id}/${item.picture}-5.jpg">
-                                    <img class="day_img" src="./../img/post/post-${item.picture}/day${item.id}/${item.picture}-5.jpg" alt="">
+                                    <source class="day_img" media="(max-width: 699px)" srcset="../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-5.webp, ../img/post/post-${item.picture}/day${item.id}/sm-${item.picture}-5.jpg">
+                                    <source class="day_img" media="(min-width: 700px)" srcset="../img/post/post-${item.picture}/day${item.id}/${item.picture}-5.webp, ../img/post/post-${item.picture}/day${item.id}/${item.picture}-5.jpg">
+                                    <img class="day_img" src="../img/post/post-${item.picture}/day${item.id}/${item.picture}-5.jpg" alt="">
                                 </picture>
                             </div>
 
