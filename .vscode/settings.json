@@ -3,7 +3,7 @@
       {
         "format": "expanded",
         "extensionName": ".css",
-        "savePath": "sass"  // Укажи здесь нужный путь для сохранения CSS
+        "savePath": "/sass"  // Укажи здесь нужный путь для сохранения CSS
       }
     ],
     "liveSassCompile.settings.generateMap": false,
