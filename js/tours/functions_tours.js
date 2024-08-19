@@ -61,7 +61,7 @@ function addInnerText (toursArrayId) {
     const iconFirst = document.querySelector('#icon-first');
     const iconSecond = document.querySelector('#icon-second');
 
-    const transitionHTML = `<a class="transition__title" href="../../${toursArrayId.link}.html">${toursArrayId.type}</a>
+    const transitionHTML = `<a class="transition__title" href="../${toursArrayId.link}.html">${toursArrayId.type}</a>
                             <div class="transition__arrows">
                                 <svg class="transition__arrow">
                                     <use xlink:href="#transition-arrow"></use>
