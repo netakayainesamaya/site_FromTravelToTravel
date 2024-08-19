@@ -1,3 +1,5 @@
+@import "../base/vars";
+
 /* Chief-slider =============================================
 ==========================================================*/
 	
@@ -120,8 +122,8 @@
     display: inline-block;
 
     background-color: $grey;
-    -webkit-mask-image: url("../../img/arrow.svg");
-    mask-image: url("../../img/arrow.svg");
+    -webkit-mask-image: url("#{$img-path}/arrow.svg");
+    mask-image: url("#{$img-path}/arrow.svg");
 
     transition: transform .2s linear;
 
@@ -440,7 +442,7 @@
     position: relative;
     z-index: 2;
 
-    background: url('../../img/post__preview/post_set.svg') no-repeat;
+    background: url('#{$img-path}/post__preview/post_set.svg') no-repeat;
 
     @include breakpoint($mobile-iphone) {
         height: 5rem;

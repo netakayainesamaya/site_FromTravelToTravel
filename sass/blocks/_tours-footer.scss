@@ -1,7 +1,9 @@
+@import "../base/vars";
+
 .tours__footer-bg {
     margin-bottom: 2rem;
 
-    background: url('../../img/post/post__footer-bg.jpg');
+    background: url('#{$img-path}/post/post__footer-bg.jpg');
 
     position: relative;
 

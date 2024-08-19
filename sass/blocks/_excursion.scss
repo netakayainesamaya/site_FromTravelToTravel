@@ -1,5 +1,7 @@
+@import "../base/vars";
+
 .excursion-bg {
-    background: url('../../img/post/excursion-bg.jpg');
+    background: url('#{$img-path}/post/excursion-bg.jpg');
 }
 
 .excursions__main {

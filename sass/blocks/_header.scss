@@ -1,3 +1,5 @@
+@import "../base/vars";
+
 .header {
     padding: .5rem 1rem .5rem 1rem;
 
@@ -8,7 +10,7 @@
     align-items: center;
 
     background-color: $wave;;
-    background-image: url("../../img/header/header-bg.png");
+    background-image: url("#{$img-path}/header/header-bg.png");
 
     position: fixed;
     top: 0;
