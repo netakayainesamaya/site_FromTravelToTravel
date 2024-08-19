@@ -1,8 +1,7 @@
 // Ассинхронная функция получения данных из файла post-tours.json
 async function getTours(id, link) {
     // Получаем данные из products.json
-    let basePath = window.location.pathname.includes('/tours/') ? '../' : '';
-    const responce = await fetch(`${basePath}js/tours/post-tours.json`);
+    const responce = await fetch('../js/tours/post-tours.json');
     const responceDays = await fetch(link);
 
     // Парсим данные из JSON формата в JS
