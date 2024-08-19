@@ -6,15 +6,17 @@ getMoreTours();
 // Ассинхронная функция получения данных из файла products.json
 async function getMoreTours() {
     let link;
+    let basePath = window.location.pathname.includes('/tours/') ? '../' : '';
+    
 
     if (document.querySelector('title').innerText == 'Экскурсии с гидом') {
-        link = 'js/services/excursions.json';
+        link = `${basePath}js/services/excursions.json`;  // Шаблонная строка
     } else if (document.querySelector('title').innerText == 'Туры по Крыму') {
-        link = 'js/services/tours.json';
+        link = `${basePath}js/services/tours.json`;  // Шаблонная строка
     } else if (document.querySelector('title').innerText == 'Активный отдых') {
-        link = 'js/services/tracking.json';
+        link = `${basePath}js/services/tracking.json`;  // Шаблонная строка
     } else {
-        link = 'js/services/more__tours.json';
+        link = `${basePath}js/services/more__tours.json`;  // Шаблонная строка
     };
 
     // Получаем данные из products.json
